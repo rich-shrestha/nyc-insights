@@ -1,0 +1,149 @@
+{
+ "generated_at": "2026-10-24T13:38:13+00:00",
+ "clusters": [
+  {
+   "id": "e80d7d09ce",
+   "question": "Driving from Philadelphia to uptown Manhattan on the day of the World Cup Final?",
+   "theme": "things to do",
+   "count": 1,
+   "weighted_count": 1.0,
+   "engagement": 7.0,
+   "sources": [
+    "stackexchange"
+   ],
+   "latest_date": "2026-07-16",
+   "first_date": "2026-07-16",
+   "recent_count": 0,
+   "datasets": [
+    {
+     "key": "citibike_trips",
+     "name": "Citi Bike Trip Histories",
+     "socrata_id": null,
+     "domain": "s3.amazonaws.com/tripdata",
+     "answers": "Every Citi Bike ride (start/end station, time, duration). Monthly CSVs at citibikenyc.com/system-data, not on Socrata.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    },
+    {
+     "key": "street_trees",
+     "name": "2015 Street Tree Census",
+     "socrata_id": "uvpi-gqnh",
+     "domain": "data.cityofnewyork.us",
+     "answers": "Every street tree (species, size, health) by neighborhood: greenest blocks, fall foliage, allergy season.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    },
+    {
+     "key": "permitted_events",
+     "name": "NYC Permitted Event Information",
+     "socrata_id": "tvpp-9vvx",
+     "domain": "data.cityofnewyork.us",
+     "answers": "Permitted street fairs, block parties, festivals, and parades with dates and locations.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    }
+   ],
+   "angle": "explainer angle",
+   "members": [
+    {
+     "question": "Driving from Philadelphia to uptown Manhattan on the day of the World Cup Final?",
+     "source": "stackexchange",
+     "origin": "travel.stackexchange.com",
+     "link": "https://travel.stackexchange.com/questions/204066/driving-from-philadelphia-to-uptown-manhattan-on-the-day-of-the-world-cup-final",
+     "date": "2026-07-16",
+     "engagement": 7.0,
+     "id": "4a0814dfcbdb"
+    }
+   ],
+   "scores": {
+    "content": 6.72,
+    "demand": 10.0,
+    "answerability": 4,
+    "freshness": 2.14,
+    "demand_parts": {
+     "engagement": 10.0,
+     "times_asked": 10.0,
+     "sources": 10.0
+    }
+   },
+   "why": "Asked once on Stack Exchange (latest 2026-07-16); 7 total likes/replies/votes; partly answerable with Citi Bike Trip Histories; explainer angle.",
+   "used": false,
+   "rank": 1
+  },
+  {
+   "id": "a869ec696a",
+   "question": "JFK to 78th and 2nd Avenue via Public Transportation on a Saturday night (8 PM)?",
+   "theme": "transit",
+   "count": 1,
+   "weighted_count": 1.0,
+   "engagement": 7.0,
+   "sources": [
+    "stackexchange"
+   ],
+   "latest_date": "2026-05-31",
+   "first_date": "2026-05-31",
+   "recent_count": 0,
+   "datasets": [
+    {
+     "key": "service_requests_311",
+     "name": "311 Service Requests (2020-present)",
+     "socrata_id": "erm2-nwe9",
+     "domain": "data.cityofnewyork.us",
+     "answers": "What residents complain about where: noise, heat/hot water, rodents, parking, street conditions, by neighborhood.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    },
+    {
+     "key": "citibike_trips",
+     "name": "Citi Bike Trip Histories",
+     "socrata_id": null,
+     "domain": "s3.amazonaws.com/tripdata",
+     "answers": "Every Citi Bike ride (start/end station, time, duration). Monthly CSVs at citibikenyc.com/system-data, not on Socrata.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    },
+    {
+     "key": "bicycle_counts",
+     "name": "Bicycle Counts (DOT counters)",
+     "socrata_id": "uczf-rk3c",
+     "domain": "data.cityofnewyork.us",
+     "answers": "Automated bike counter totals by location and time: busiest bike routes and bridges.",
+     "score": 4,
+     "keywords": [],
+     "theme_match": true
+    }
+   ],
+   "angle": "explainer angle",
+   "members": [
+    {
+     "question": "JFK to 78th and 2nd Avenue via Public Transportation on a Saturday night (8 PM)?",
+     "source": "stackexchange",
+     "origin": "travel.stackexchange.com",
+     "link": "https://travel.stackexchange.com/questions/203829/jfk-to-78th-and-2nd-avenue-via-public-transportation-on-a-saturday-night-8-pm",
+     "date": "2026-05-31",
+     "engagement": 7.0,
+     "id": "0140c8e860cd"
+    }
+   ],
+   "scores": {
+    "content": 6.56,
+    "demand": 10.0,
+    "answerability": 4,
+    "freshness": 1.06,
+    "demand_parts": {
+     "engagement": 10.0,
+     "times_asked": 10.0,
+     "sources": 10.0
+    }
+   },
+   "why": "Asked once on Stack Exchange (latest 2026-05-31); 7 total likes/replies/votes; partly answerable with 311 Service Requests (2020-present); explainer angle.",
+   "used": false,
+   "rank": 2
+  }
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "stackexchange": {
+  "questions_read": 2,
+  "kept": 2,
+  "quota_remaining": 299,
+  "source": "stackexchange",
+  "new": 2,
+  "total_in_file": 2,
+  "ran_at": "2026-10-24T13:31:52+00:00"
+ },
+ "nyc311": {
+  "grouped_rows": 9799,
+  "total_requests": 3963836,
+  "neighborhoods": 59,
+  "ran_at": "2026-10-24T13:38:13+00:00"
+ }
+}
