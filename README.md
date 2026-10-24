@@ -52,7 +52,7 @@ Open the file on github.com → tap the **pencil** (Edit) → change it → **Co
 
 | File | What to change |
 |---|---|
-| `config/youtube.yml` | Channels (`handle: "@name"` from the channel URL, or `channel_id: UC...`), videos per channel, comments per video, search queries |
+| `config/youtube.yml` | Channels (`channel_id: UC...`, or `handle: "@name"` from the channel URL; `nyc_only: true` for all-NYC channels, otherwise only NYC-titled videos are read), videos per channel, comments per video, search queries |
 | `config/bluesky.yml` | Search phrases, posts per query, `latest` vs `top` |
 | `config/filters.yml` | What counts as a question (starter words, min length), phrases to drop (e.g. "what song"), NYC terms Bluesky posts must mention |
 | `config/themes.yml` | Theme keywords. Most hits wins; ties go to the theme listed first; no hits = "other" |

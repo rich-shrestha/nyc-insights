@@ -7,7 +7,7 @@ from datetime import datetime, timedelta, timezone
 import requests
 
 from collectors.common import (env, extract_question, is_question, load_config, log, make_record,
-                               save_questions, update_report)
+                               mentions_nyc, save_questions, update_report)
 
 SOURCE = "youtube"
 API = "https://www.googleapis.com/youtube/v3"
@@ -38,13 +38,18 @@ def _resolve_channel(key: str, ch: dict) -> tuple[str | None, str | None]:
     return it["contentDetails"]["relatedPlaylists"]["uploads"], it["snippet"]["title"]
 
 
-def _recent_videos(key: str, playlist: str, n: int, max_age_days: int) -> list[str]:
-    data = _get(key, "playlistItems", part="contentDetails", playlistId=playlist, maxResults=min(50, n * 2))
+def _recent_videos(key: str, playlist: str, n: int, max_age_days: int, require_nyc: bool = False) -> list[str]:
+    """Most recent uploads. With require_nyc, only videos whose title/description mention NYC."""
+    data = _get(key, "playlistItems", part="contentDetails,snippet", playlistId=playlist,
+                maxResults=50 if require_nyc else min(50, n * 2))
     cutoff = datetime.now(timezone.utc) - timedelta(days=max_age_days)
     vids = []
     for it in data.get("items", []):
         published = it["contentDetails"].get("videoPublishedAt")
         if published and datetime.fromisoformat(published.replace("Z", "+00:00")) < cutoff:
+            continue
+        sn = it.get("snippet", {})
+        if require_nyc and not mentions_nyc(f"{sn.get('title', '')} {sn.get('description', '')}"):
             continue
         vids.append(it["contentDetails"]["videoId"])
     return vids[:n]
@@ -94,7 +99,8 @@ def collect(limit: int | None = None) -> tuple[list[dict], dict]:
             log(SOURCE, f"could not resolve channel {label}")
             continue
         stats["channels_ok"].append(f"{label} ({title})")
-        for v in _recent_videos(key, playlist, cfg.get("videos_per_channel", 6), cfg.get("max_video_age_days", 365)):
+        for v in _recent_videos(key, playlist, cfg.get("videos_per_channel", 6), cfg.get("max_video_age_days", 365),
+                                require_nyc=not ch.get("nyc_only", False)):
             video_jobs.append((v, label))
     for q in cfg.get("search_queries", []) or []:
         try:

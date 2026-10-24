@@ -1,47 +1,55 @@
 # YouTube sources. Needs the YT_API_KEY secret.
 # Each channel can be given by `handle` (the @name in the channel URL) or `channel_id` (starts with UC...).
+# channel_id is safer: a guessed handle can silently point at a different channel.
+# To find a channel's id: open the channel page on a computer > View source > search "channel/UC".
+#
+# nyc_only: true  -> read every recent upload (the channel is all NYC).
+# nyc_only: false -> (default) only read videos whose title/description mention NYC
+#                    (terms in config/filters.yml -> nyc_terms). Use for national channels.
+#
 # Quota: every channel costs ~3-8 units per run out of 10,000/day. search_queries cost 100 units each.
 
 videos_per_channel: 6        # most recent uploads to read per channel
 comments_per_video: 100      # top comment threads (by relevance) per video
 max_video_age_days: 365      # ignore uploads older than this
 
+# Verified 2026-10-24 (channel id resolves and recent uploads match).
 channels:
   # --- Food ---
-  - handle: "@eater"
+  - channel_id: UCRzPUBhXUZHclB7B5bURFXw   # @eater (national; NYC videos only)
     category: food
-  - handle: "@theinfatuation"
+  - channel_id: UCLyHIJeu7I-IIiM_k8F7PjA   # @infatuation (The Infatuation)
     category: food
-  - handle: "@FoodInsider"
-    category: food
-  - handle: "@munchies"
-    category: food
-  - handle: "@BrunchBoys"
+  - channel_id: UCJxD0wgh9HY08cRYRvZbcQw   # @BrunchBoys (Jeremy Jacobowitz)
     category: food
   # --- Apartments, rent, real estate ---
-  - handle: "@calebsimpson"
+  - channel_id: UCOrE6g6E4HwdUWaZeITOAaQ   # @calebwsimpson ("how much is your rent")
     category: apartments
-  - handle: "@RyanSerhant"
-    category: apartments
-  - handle: "@spencerhardwick"
-    category: apartments
-  - handle: "@Elegran"
+  - channel_id: UCG98giOsUxIlXV0rNUhxLew   # @RyanSerhant
     category: apartments
   # --- City life / things to do ---
-  - handle: "@ErikConover"
+  - channel_id: UCfDhrxnpVuguOUR0GsfQVjQ   # @UntappedNewYork
     category: things to do
-  - handle: "@UntappedNewYork"
+    nyc_only: true
+  - channel_id: UC0xjgWP2PaZhnNUDKpx6uxg   # @NYCTourism (NYC Tourism + Conventions)
     category: things to do
-  - handle: "@TimeOut"
+    nyc_only: true
+  - channel_id: UCQg78WeVDvQPhM9j2cdwEww   # @Newyorkcityguide
     category: things to do
-  - handle: "@SecretNYC"
-    category: things to do
-  - handle: "@Thrillist"
-    category: things to do
+    nyc_only: true
+  - channel_id: UCY_2VeS5Q9_sMZRhtvF0c5Q   # @Gothamist
+    category: news
+    nyc_only: true
 
-# Optional keyword searches for recent popular NYC videos (100 quota units each).
+# Keyword searches for recent popular NYC videos (100 quota units each).
+# These find NYC videos from any channel, so they are the main YouTube source.
 search_queries:
   - "NYC apartment tour"
+  - "how much is your rent NYC"
+  - "moving to NYC"
   - "best food NYC"
+  - "NYC pizza"
   - "things to do in NYC"
+  - "NYC on a budget"
+  - "best NYC neighborhoods"
 search_results_per_query: 5
