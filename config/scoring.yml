@@ -1,0 +1,56 @@
+# How clusters are scored. All weights are editable.
+
+# Content score = demand * w_demand + answerability * w_answerability + freshness * w_freshness
+weights:
+  demand: 0.5
+  answerability: 0.35
+  freshness: 0.15
+
+# Demand (0-10) blends three normalized parts.
+demand_parts:
+  engagement: 0.4       # total likes/replies/score across the cluster (log-scaled)
+  times_asked: 0.4      # number of questions in the cluster (log-scaled)
+  distinct_sources: 0.2 # how many different sources it showed up in
+
+# Per-source multipliers applied to a question's count and engagement.
+source_weights:
+  youtube: 1.0
+  bluesky: 1.0
+  stackexchange: 1.0
+  reddit: 1.0
+  sheet: 1.5            # hand-picked questions count 1.5x
+sheet_base_engagement: 5  # sheet rows have no likes, so each counts as this much engagement
+
+# Freshness (0-10): 10 = asked today. Halves every `half_life_days`.
+freshness:
+  half_life_days: 45
+  recent_window_days: 30   # used in the "why" text ("9 in the last 30 days")
+
+# Clustering: questions with TF-IDF cosine similarity above this are grouped.
+# Raise (e.g. 0.6) for tighter clusters, lower (e.g. 0.4) to merge more.
+cluster:
+  similarity_threshold: 0.5
+  max_questions: 8000      # keep the most engaged N questions if the pool gets bigger
+
+# Questions older than this are ignored for scoring (they stay in questions.json).
+max_question_age_days: 730
+
+top_n: 10
+
+# Recommendation angle detection (first match wins). Used in the "why" text and briefs.
+angles:
+  - pattern: "\\b(cleanest|quietest|safest|cheapest|greenest|loudest|dirtiest|busiest|worst|most|least|rank|ranking)\\b"
+    angle: "ranking angle (top/bottom neighborhoods or spots)"
+  - pattern: "\\b(best|favorite|favourite|recommend|recommendation|recommendations|where (can|should|do) i|where to|good (spot|place|area)|go-to|anyone know)\\b"
+    angle: "strong recommendation angle"
+  - pattern: "\\b(safe|safest|dangerous|sketchy)\\b"
+    angle: "safety verdict angle"
+  - pattern: "\\b(how much|cost|price|afford|expensive|cheap|salary)\\b"
+    angle: "price benchmark angle"
+  - pattern: "\\b(vs|versus|better than|compared to)\\b"
+    angle: "head-to-head comparison angle"
+  - pattern: "\\b(worth it|overrated|underrated|is it)\\b"
+    angle: "myth-busting verdict angle"
+  - pattern: "\\b(when|what time|busiest|crowded|rush)\\b"
+    angle: "timing / when-to-go angle"
+default_angle: "explainer angle"

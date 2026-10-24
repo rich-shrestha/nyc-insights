@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NYC Insights</title>
+<meta name="description" content="Which questions young New Yorkers are asking, which ones to answer with NYC Open Data, and why.">
+<meta name="theme-color" content="#fcfcfb" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Crect x='7' y='16' width='4' height='9' rx='1' fill='white'/%3E%3Crect x='14' y='10' width='4' height='15' rx='1' fill='white'/%3E%3Crect x='21' y='6' width='4' height='19' rx='1' fill='white'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="wrap">
+    <h1>NYC Insights</h1>
+    <p class="sub" id="updated">Loading…</p>
+  </div>
+  <nav class="tabs wrap" role="tablist">
+    <button role="tab" data-tab="top" aria-selected="true">Top 10</button>
+    <button role="tab" data-tab="all" aria-selected="false">All questions</button>
+    <button role="tab" data-tab="311" aria-selected="false">311</button>
+    <button role="tab" data-tab="about" aria-selected="false">How it works</button>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section id="tab-top" class="tab" role="tabpanel">
+    <h2>This week's top 10 to make</h2>
+    <p class="lede">Highest content score = demand × <span data-w="demand"></span> + answerability × <span data-w="answerability"></span> + freshness × <span data-w="freshness"></span>.</p>
+    <ol id="top-list" class="cards"></ol>
+  </section>
+
+  <section id="tab-all" class="tab" role="tabpanel" hidden>
+    <h2>All questions</h2>
+    <div class="controls">
+      <input id="q" type="search" placeholder="Search questions…" aria-label="Search questions">
+      <div class="row">
+        <select id="f-theme" aria-label="Filter by theme"><option value="">All themes</option></select>
+        <select id="f-source" aria-label="Filter by source"><option value="">All sources</option></select>
+        <select id="sort" aria-label="Sort">
+          <option value="content">Sort: content score</option>
+          <option value="demand">Sort: demand</option>
+          <option value="recent">Sort: most recent</option>
+        </select>
+      </div>
+      <label class="check"><input type="checkbox" id="f-used"> Show used</label>
+    </div>
+    <p class="count" id="all-count"></p>
+    <ul id="all-list" class="cards compact"></ul>
+    <button id="more" class="btn ghost" hidden>Show more</button>
+  </section>
+
+  <section id="tab-311" class="tab" role="tabpanel" hidden>
+    <h2>What NYC complains about</h2>
+    <p class="lede" id="c311-lede"></p>
+    <div class="controls">
+      <select id="hood" aria-label="Neighborhood"></select>
+    </div>
+    <div class="viz-root">
+      <h3 id="c311-title"></h3>
+      <div id="c311-chart" class="bars" role="img"></div>
+      <div id="c311-distinct"></div>
+      <p class="note" id="c311-note"></p>
+    </div>
+  </section>
+
+  <section id="tab-about" class="tab" role="tabpanel" hidden>
+    <h2>How it works</h2>
+    <div class="prose">
+      <p><strong>1. Collect.</strong> Every Sunday night a GitHub Action pulls question-style posts from YouTube comments, Bluesky, Stack Exchange, your Google Sheet (and Reddit once keys exist), plus a 12-month 311 summary.</p>
+      <p><strong>2. Tag &amp; cluster.</strong> Each question gets a theme from <code>config/themes.yml</code>. Similar wording (TF-IDF cosine) is grouped into clusters.</p>
+      <p><strong>3. Score.</strong> <b>Demand</b>: engagement + times asked + distinct sources. <b>Answerability</b>: best match in <code>config/datasets.yml</code>. <b>Freshness</b>: how recent the asks are. Weights live in <code>config/scoring.yml</code>.</p>
+      <p><strong>Mark used.</strong> Tap "Mark used" on a card. It opens a pre-filled GitHub issue; tap <em>Submit</em>. A bot adds it to <code>config/used.yml</code>, rebuilds the site (about 2 minutes), and closes the issue. To undo, open an issue titled <code>unuse: &lt;id&gt;</code>.</p>
+      <p id="run-report"></p>
+      <p><a id="repo-link" href="#">View the repo</a> · <a id="run-link" href="#">Run a refresh now</a></p>
+    </div>
+  </section>
+</main>
+<footer class="wrap foot">Data: NYC Open Data, YouTube, Bluesky, Stack Exchange, curated sheet. No usernames stored.</footer>
+<script src="app.js"></script>
+</body>
+</html>

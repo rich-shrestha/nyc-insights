@@ -1,0 +1,5 @@
+# Clusters you've already made videos for. They drop off the Top 10.
+# Add entries by tapping "Mark used" on the site (opens a GitHub issue the bot processes),
+# or edit this file directly on GitHub. `question` is used as a fallback match
+# if a cluster's id changes between runs.
+used: []

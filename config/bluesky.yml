@@ -1,0 +1,12 @@
+# Bluesky searchPosts phrases. Needs BSKY_HANDLE + BSKY_APP_PASSWORD secrets.
+# Posts must be question-style AND mention an NYC term (see filters.yml) to be kept.
+posts_per_query: 100   # max 100 per page
+pages_per_query: 2
+sort: latest           # latest | top
+
+queries:
+  - "moving to NYC"
+  - "anyone know NYC"
+  - "best in Brooklyn"
+  - "NYC apartment"
+  - "NYC recommendations"

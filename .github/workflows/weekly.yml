@@ -1,0 +1,74 @@
+name: Weekly refresh
+
+on:
+  schedule:
+    # Sundays 11:17pm New York time (03:17 UTC Monday during daylight time; 10:17pm in winter)
+    - cron: "17 3 * * 1"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "full = normal run, test = ~50 items per source, rescore = re-score existing questions only (after config edits)"
+        type: choice
+        options: [full, test, rescore]
+        default: full
+      only:
+        description: "Optional: space-separated sources (youtube bluesky stackexchange sheet reddit nyc311). Blank = all."
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-writes
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Collect, tag, cluster, score
+        env:
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          BSKY_HANDLE: ${{ secrets.BSKY_HANDLE }}
+          BSKY_APP_PASSWORD: ${{ secrets.BSKY_APP_PASSWORD }}
+          SHEET_CSV_URL: ${{ secrets.SHEET_CSV_URL }}
+          REDDIT_CLIENT_ID: ${{ secrets.REDDIT_CLIENT_ID }}
+          REDDIT_CLIENT_SECRET: ${{ secrets.REDDIT_CLIENT_SECRET }}
+          SOCRATA_APP_TOKEN: ${{ secrets.SOCRATA_APP_TOKEN }}
+          STACKEXCHANGE_KEY: ${{ secrets.STACKEXCHANGE_KEY }}
+          MODE: ${{ github.event.inputs.mode || 'full' }}
+          ONLY: ${{ github.event.inputs.only || '' }}
+        run: |
+          ARGS=""
+          if [ "$MODE" = "test" ]; then ARGS="--test"; fi
+          if [ "$MODE" = "rescore" ]; then ARGS="--skip-collect"; fi
+          if [ -n "$ONLY" ]; then ARGS="$ARGS --only $ONLY"; fi
+          python run_all.py $ARGS
+
+      - name: Summary
+        run: |
+          echo "## Run report" >> "$GITHUB_STEP_SUMMARY"
+          echo '```json' >> "$GITHUB_STEP_SUMMARY"
+          cat data/run_report.json >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit data and site
+        run: |
+          git config user.name "nyc-insights-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data docs config
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Weekly refresh $(date -u +%Y-%m-%d) (${{ github.event.inputs.mode || 'scheduled' }})"
+          git pull --rebase --autostash
+          git push

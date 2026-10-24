@@ -1,0 +1,210 @@
+# Theme tagging rules. A question gets the theme with the most keyword hits
+# (whole-word, case-insensitive; phrases allowed). Ties go to the theme listed first.
+# No hits -> "other". Edit freely; changes apply on the next run.
+
+themes:
+  food & drink:
+    - food
+    - eat
+    - eating
+    - restaurant
+    - restaurants
+    - pizza
+    - bagel
+    - bagels
+    - brunch
+    - dinner
+    - lunch
+    - breakfast
+    - coffee
+    - cafe
+    - bakery
+    - dumplings
+    - ramen
+    - sushi
+    - tacos
+    - deli
+    - bodega
+    - dessert
+    - halal cart
+    - food cart
+    - michelin
+    - reservation
+    - reservations
+    - omakase
+    - cuisine
+    - dish
+    - menu
+    - chinatown
+    - k-town
+    - grocery
+    - trader joe's
+
+  apartments & neighborhoods:
+    - apartment
+    - apartments
+    - apt
+    - rent
+    - renting
+    - lease
+    - landlord
+    - broker
+    - broker fee
+    - studio
+    - roommate
+    - roommates
+    - sublet
+    - neighborhood
+    - neighborhoods
+    - live in
+    - living in
+    - where to live
+    - building
+    - doorman
+    - walk-up
+    - walkup
+    - rats
+    - roaches
+    - mice
+    - bed bugs
+    - heat
+    - streeteasy
+    - guarantor
+    - rent stabilized
+    - quiet
+
+  transit:
+    - subway
+    - train
+    - trains
+    - mta
+    - bus
+    - buses
+    - metrocard
+    - omny
+    - citi bike
+    - citibike
+    - bike
+    - biking
+    - commute
+    - commuting
+    - uber
+    - lyft
+    - taxi
+    - ferry
+    - lirr
+    - path
+    - nj transit
+    - jfk
+    - laguardia
+    - newark airport
+    - airport
+    - congestion pricing
+    - parking
+    - car
+
+  safety:
+    - safe
+    - safety
+    - unsafe
+    - dangerous
+    - crime
+    - crimes
+    - robbery
+    - robbed
+    - stolen
+    - theft
+    - shooting
+    - shootings
+    - police
+    - nypd
+    - sketchy
+    - scam
+    - scams
+    - pickpocket
+    - at night alone
+
+  nightlife:
+    - bar
+    - bars
+    - club
+    - clubs
+    - nightlife
+    - drinks
+    - cocktail
+    - cocktails
+    - happy hour
+    - rooftop
+    - speakeasy
+    - dive bar
+    - party
+    - dancing
+    - late night
+    - wine bar
+    - beer
+    - date night
+
+  things to do:
+    - things to do
+    - visit
+    - visiting
+    - museum
+    - museums
+    - park
+    - parks
+    - central park
+    - events
+    - event
+    - weekend
+    - show
+    - broadway
+    - concert
+    - free
+    - activities
+    - tourist
+    - tourists
+    - itinerary
+    - day trip
+    - hidden gem
+    - hidden gems
+    - street fair
+    - festival
+    - beach
+    - christmas
+    - halloween
+    - thanksgiving parade
+    - new year's eve
+
+  cost of living:
+    - cost
+    - costs
+    - expensive
+    - cheap
+    - afford
+    - affordable
+    - salary
+    - income
+    - budget
+    - price
+    - prices
+    - how much
+    - money
+    - tax
+    - taxes
+    - make to live
+    - worth it
+
+  moving to nyc:
+    - moving to nyc
+    - moving to new york
+    - move to nyc
+    - move to new york
+    - moving here
+    - relocating
+    - relocate
+    - new to nyc
+    - new to the city
+    - just moved
+    - transplant
+    - first apartment
+    - first time living

@@ -1,0 +1,47 @@
+# YouTube sources. Needs the YT_API_KEY secret.
+# Each channel can be given by `handle` (the @name in the channel URL) or `channel_id` (starts with UC...).
+# Quota: every channel costs ~3-8 units per run out of 10,000/day. search_queries cost 100 units each.
+
+videos_per_channel: 6        # most recent uploads to read per channel
+comments_per_video: 100      # top comment threads (by relevance) per video
+max_video_age_days: 365      # ignore uploads older than this
+
+channels:
+  # --- Food ---
+  - handle: "@eater"
+    category: food
+  - handle: "@theinfatuation"
+    category: food
+  - handle: "@FoodInsider"
+    category: food
+  - handle: "@munchies"
+    category: food
+  - handle: "@BrunchBoys"
+    category: food
+  # --- Apartments, rent, real estate ---
+  - handle: "@calebsimpson"
+    category: apartments
+  - handle: "@RyanSerhant"
+    category: apartments
+  - handle: "@spencerhardwick"
+    category: apartments
+  - handle: "@Elegran"
+    category: apartments
+  # --- City life / things to do ---
+  - handle: "@ErikConover"
+    category: things to do
+  - handle: "@UntappedNewYork"
+    category: things to do
+  - handle: "@TimeOut"
+    category: things to do
+  - handle: "@SecretNYC"
+    category: things to do
+  - handle: "@Thrillist"
+    category: things to do
+
+# Optional keyword searches for recent popular NYC videos (100 quota units each).
+search_queries:
+  - "NYC apartment tour"
+  - "best food NYC"
+  - "things to do in NYC"
+search_results_per_query: 5

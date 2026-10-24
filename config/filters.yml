@@ -1,0 +1,62 @@
+# Rules shared by every collector.
+
+# A text counts as a question if it contains "?" or starts with one of these words.
+question_starters: [who, what, where, how, is, does, anyone, best, which, can, should, any, are]
+
+min_words: 4          # drop very short comments ("where?")
+max_chars: 600        # longer posts are trimmed to their question sentence(s)
+
+# Dropped if any of these phrases appear (common off-topic YouTube comment questions).
+exclude_phrases:
+  - "what song"
+  - "song name"
+  - "name of the song"
+  - "what camera"
+  - "what mic"
+  - "what lens"
+  - "who's watching"
+  - "who is watching"
+  - "anyone watching in"
+  - "anyone else here"
+  - "subscribe"
+  - "first comment"
+  - "giveaway"
+
+# Sources that are NOT already NYC-specific (Bluesky, Stack Exchange off-tag) must mention one of these.
+nyc_terms:
+  - nyc
+  - new york
+  - manhattan
+  - brooklyn
+  - queens
+  - bronx
+  - staten island
+  - harlem
+  - williamsburg
+  - bushwick
+  - astoria
+  - les
+  - lower east side
+  - upper east side
+  - upper west side
+  - ues
+  - uws
+  - soho
+  - noho
+  - tribeca
+  - chelsea
+  - midtown
+  - fidi
+  - greenpoint
+  - park slope
+  - crown heights
+  - bed stuy
+  - long island city
+  - lic
+  - jersey city
+  - hoboken
+  - mta
+  - subway
+  - citi bike
+  - jfk
+  - laguardia

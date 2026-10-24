@@ -1,0 +1,152 @@
+# NYC Open Data datasets that can answer questions.
+# Answerability for a cluster = best dataset match:
+#   +4 if the cluster's theme is in `themes`, +3 per matching keyword (max 2 keywords) -> capped at 10.
+# `domain` is the Socrata host; query URL = https://<domain>/resource/<socrata_id>.json
+# Optional `max_score` caps a dataset that only answers questions indirectly.
+# Datasets without a socrata_id (e.g. Citi Bike trips, published as CSVs on S3) still count for scoring.
+
+datasets:
+  - key: restaurant_inspections
+    name: DOHMH Restaurant Inspection Results
+    domain: data.cityofnewyork.us
+    socrata_id: 43nn-pn8j
+    answers: "Letter grades, violations (incl. rodent/roach evidence), and cuisine for every NYC restaurant."
+    themes: [food & drink, nightlife]
+    keywords: [restaurant, restaurants, pizza, bagel, bagels, sushi, ramen, tacos, dumplings, coffee, cafe, bakery, deli, brunch, dinner, lunch, food, eat, cuisine, grade, clean, rats, roaches, health, chinatown, halal, bar, bars]
+    key_fields: [camis, dba, boro, zipcode, nta, cuisine_description, inspection_date, grade, score, violation_description, critical_flag]
+
+  - key: service_requests_311
+    name: 311 Service Requests (2020-present)
+    domain: data.cityofnewyork.us
+    socrata_id: erm2-nwe9
+    answers: "What residents complain about where: noise, heat/hot water, rodents, parking, street conditions, by neighborhood."
+    themes: [apartments & neighborhoods, nightlife, safety, transit, moving to nyc]
+    keywords: [noise, noisy, loud, quiet, heat, hot water, rats, mice, roaches, rodent, trash, garbage, neighborhood, neighborhoods, parking, landlord, building, party, construction, smell, homeless, illegal parking]
+    key_fields: [created_date, complaint_type, descriptor, incident_zip, borough, community_board, latitude, longitude]
+
+  - key: citibike_trips
+    name: Citi Bike Trip Histories
+    domain: s3.amazonaws.com/tripdata
+    socrata_id: null
+    answers: "Every Citi Bike ride (start/end station, time, duration). Monthly CSVs at citibikenyc.com/system-data, not on Socrata."
+    themes: [transit, things to do]
+    keywords: [citi bike, citibike, bike, biking, bikes, cycling, ride, rides, commute]
+    key_fields: [started_at, ended_at, start_station_name, end_station_name, member_casual, rideable_type]
+
+  - key: bicycle_counts
+    name: Bicycle Counts (DOT counters)
+    domain: data.cityofnewyork.us
+    socrata_id: uczf-rk3c
+    answers: "Automated bike counter totals by location and time: busiest bike routes and bridges."
+    themes: [transit]
+    keywords: [bike, biking, bikes, cycling, bridge, bike lane, bike lanes]
+    key_fields: [id, date, counts]
+
+  - key: mta_subway_hourly
+    name: MTA Subway Hourly Ridership (2025-present)
+    domain: data.ny.gov
+    socrata_id: 5wq4-mkjj
+    answers: "Hourly OMNY/MetroCard entries per station complex: busiest stations and times, crowding."
+    themes: [transit, moving to nyc, apartments & neighborhoods]
+    keywords: [subway, train, trains, station, stations, crowded, rush hour, commute, commuting, mta, omny, metrocard, line, express, late night]
+    key_fields: [transit_timestamp, station_complex, borough, payment_method, fare_class_category, ridership, latitude, longitude]
+
+  - key: mta_daily_ridership
+    name: MTA Daily Ridership and Traffic (2020-present)
+    domain: data.ny.gov
+    socrata_id: sayj-mze2
+    answers: "Systemwide daily ridership by mode (subway, bus, LIRR, Metro-North, bridges & tunnels): recovery and trends."
+    themes: [transit]
+    keywords: [subway, bus, buses, lirr, metro-north, ridership, congestion pricing, traffic, bridge, tunnel]
+    key_fields: [date, mode, count]
+
+  - key: nypd_complaints_ytd
+    name: NYPD Complaint Data Current (Year To Date)
+    domain: data.cityofnewyork.us
+    socrata_id: 5uac-w243
+    answers: "Reported felonies, misdemeanors and violations by precinct, borough, premises type and subway station."
+    themes: [safety, apartments & neighborhoods, transit, moving to nyc]
+    keywords: [safe, safety, unsafe, crime, crimes, dangerous, robbery, robbed, theft, stolen, assault, sketchy, police, nypd, at night, subway, neighborhood]
+    key_fields: [cmplnt_fr_dt, boro_nm, addr_pct_cd, ofns_desc, law_cat_cd, prem_typ_desc, station_name, latitude, longitude]
+
+  - key: nypd_shootings
+    name: NYPD Shooting Incidents (2006-present)
+    domain: data.cityofnewyork.us
+    socrata_id: 5ucz-vwe8
+    answers: "Every shooting incident with date, borough, precinct: long-run safety trends by area."
+    themes: [safety]
+    keywords: [shooting, shootings, gun, guns, violence, safe, dangerous]
+    key_fields: [occur_date, boro, precinct, latitude, longitude]
+
+  - key: street_trees
+    name: 2015 Street Tree Census
+    domain: data.cityofnewyork.us
+    socrata_id: uvpi-gqnh
+    answers: "Every street tree (species, size, health) by neighborhood: greenest blocks, fall foliage, allergy season."
+    themes: [apartments & neighborhoods, things to do]
+    keywords: [tree, trees, green, greenest, leafy, foliage, fall, allergies, pollen, shade, walk, walks]
+    key_fields: [spc_common, health, tree_dbh, nta_name, boroname, zipcode, latitude, longitude]
+
+  - key: dob_permits_now
+    name: DOB NOW Build - Approved Permits
+    domain: data.cityofnewyork.us
+    socrata_id: rbx6-tga4
+    answers: "Construction permits by address/neighborhood (new buildings, alterations): where development and noise are coming."
+    themes: [apartments & neighborhoods, cost of living]
+    keywords: [construction, new building, new buildings, development, renovation, scaffolding, permit, permits, noise, gentrification, gentrifying]
+    key_fields: [job_filing_number, work_type, borough, zip_code, community_board, issued_date, job_description, estimated_job_costs]
+
+  - key: dob_permit_issuance
+    name: DOB Permit Issuance (legacy BIS)
+    domain: data.cityofnewyork.us
+    socrata_id: ipu4-2q9a
+    answers: "Historical construction permits (pre-DOB NOW) for long-run development trends."
+    themes: [apartments & neighborhoods]
+    keywords: [construction, new building, development, permit, permits, gentrification]
+    key_fields: [borough, zip_code, job_type, permit_type, issuance_date, residential]
+
+  - key: hpd_violations
+    name: HPD Housing Maintenance Code Violations
+    domain: data.cityofnewyork.us
+    socrata_id: wvxf-dwi5
+    answers: "Building violations (heat, mold, pests, lead) by address: check a building or landlord before signing a lease."
+    themes: [apartments & neighborhoods, moving to nyc]
+    keywords: [landlord, building, apartment, apartments, lease, mold, heat, hot water, pests, roaches, mice, rats, bed bugs, repairs, violations, red flags, check]
+    key_fields: [boro, streetname, housenumber, zip, class, novdescription, inspectiondate, violationstatus, communityboard]
+
+  - key: hpd_complaints
+    name: HPD Housing Maintenance Complaints and Problems
+    domain: data.cityofnewyork.us
+    socrata_id: ygpa-z7cr
+    answers: "Tenant complaints (heat, plumbing, pests) by building and neighborhood: which areas have the worst landlords."
+    themes: [apartments & neighborhoods, moving to nyc]
+    keywords: [landlord, heat, hot water, plumbing, pests, mold, apartment, building, tenant, tenants, repairs]
+    key_fields: [received_date, borough, post_code, nta, major_category, minor_category, problem_status]
+
+  - key: rodent_inspections
+    name: DOHMH Rodent Inspections
+    domain: data.cityofnewyork.us
+    socrata_id: p937-wjvj
+    answers: "Rat inspection results by address, zip and neighborhood: the rattiest (and least ratty) blocks."
+    themes: [apartments & neighborhoods]
+    keywords: [rats, rat, mice, rodents, rodent, pests, clean, dirty]
+    key_fields: [inspection_date, inspection_type, result, zip_code, borough, nta, latitude, longitude]
+
+  - key: affordable_housing
+    name: Affordable Housing Production by Building
+    domain: data.cityofnewyork.us
+    socrata_id: hg8x-zxpr
+    answers: "New affordable units (by income band and bedroom count) by neighborhood: where housing lotteries are."
+    max_score: 6   # says where affordable units are, not what market rent costs
+    themes: [apartments & neighborhoods, cost of living, moving to nyc]
+    keywords: [affordable, affordable housing, housing lottery, lottery, rent, cheap, low income, income, studio, budget]
+    key_fields: [project_name, borough, neighborhood_tabulation_area, building_completion_date, studio_units, _1_br_units, all_counted_units]
+
+  - key: permitted_events
+    name: NYC Permitted Event Information
+    domain: data.cityofnewyork.us
+    socrata_id: tvpp-9vvx
+    answers: "Permitted street fairs, block parties, festivals, and parades with dates and locations."
+    themes: [things to do, nightlife]
+    keywords: [event, events, street fair, festival, parade, block party, weekend, free, things to do, summer]
+    key_fields: [event_name, start_date_time, end_date_time, event_type, event_borough, event_location]
