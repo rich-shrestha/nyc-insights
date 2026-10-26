@@ -1,4 +1,12 @@
 {
+ "youtube": {
+  "skipped": "YT_API_KEY not set",
+  "ran_at": "2026-10-26T09:02:17+00:00"
+ },
+ "bluesky": {
+  "skipped": "BSKY_HANDLE / BSKY_APP_PASSWORD not set",
+  "ran_at": "2026-10-26T09:02:17+00:00"
+ },
  "stackexchange": {
   "questions_read": 2,
   "kept": 2,
@@ -6,16 +14,20 @@
   "source": "stackexchange",
   "new": 0,
   "total_in_file": 2,
-  "ran_at": "2026-10-24T18:21:24+00:00"
+  "ran_at": "2026-10-26T09:02:17+00:00"
+ },
+ "sheet": {
+  "error": "401 Client Error: Unauthorized for url: https://docs.google.com/spreadsheets/d/1xjMjXCnGtRvQsKzcwztNLgS56aX0p_6xZqbj45P4MOM/export?format=csv&gid=0",
+  "ran_at": "2026-10-26T09:02:18+00:00"
+ },
+ "reddit": {
+  "skipped": "REDDIT_CLIENT_ID / REDDIT_CLIENT_SECRET not set (module disabled)",
+  "ran_at": "2026-10-26T09:02:18+00:00"
  },
  "nyc311": {
-  "grouped_rows": 9799,
-  "total_requests": 3963836,
+  "grouped_rows": 9791,
+  "total_requests": 3965916,
   "neighborhoods": 59,
-  "ran_at": "2026-10-24T13:38:13+00:00"
- },
- "youtube": {
-  "skipped": "YT_API_KEY not set",
-  "ran_at": "2026-10-24T18:26:14+00:00"
+  "ran_at": "2026-10-26T09:02:32+00:00"
  }
 }
