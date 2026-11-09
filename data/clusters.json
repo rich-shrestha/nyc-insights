@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-02T11:25:57+00:00",
+ "generated_at": "2026-11-09T11:42:06+00:00",
  "clusters": [
   {
    "id": "e80d7d09ce",
@@ -59,10 +59,10 @@
     }
    ],
    "scores": {
-    "content": 6.68,
+    "content": 6.65,
     "demand": 10.0,
     "answerability": 4,
-    "freshness": 1.87,
+    "freshness": 1.67,
     "demand_parts": {
      "engagement": 10.0,
      "times_asked": 10.0,
@@ -131,10 +131,10 @@
     }
    ],
    "scores": {
-    "content": 6.54,
+    "content": 6.52,
     "demand": 10.0,
     "answerability": 4,
-    "freshness": 0.92,
+    "freshness": 0.82,
     "demand_parts": {
      "engagement": 10.0,
      "times_asked": 10.0,

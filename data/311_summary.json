@@ -1,94 +1,94 @@
 {
- "generated_at": "2026-11-02T11:25:57+00:00",
+ "generated_at": "2026-11-09T11:42:06+00:00",
  "period": {
-  "start": "2025-11-02",
-  "end": "2026-11-02"
+  "start": "2025-11-09",
+  "end": "2026-11-09"
  },
  "dataset": "erm2-nwe9",
  "query": {
   "$select": "community_board, complaint_type, count(*) AS n",
-  "$where": "created_date >= '2025-11-02T00:00:00' AND created_date < '2026-11-02T00:00:00'",
+  "$where": "created_date >= '2025-11-09T00:00:00' AND created_date < '2026-11-09T00:00:00'",
   "$group": "community_board, complaint_type",
   "$order": "n DESC",
   "$limit": 50000
  },
- "total_requests": 3965788,
- "unmapped_requests": 70425,
+ "total_requests": 3956823,
+ "unmapped_requests": 70415,
  "citywide_top": [
   {
    "type": "Illegal Parking",
-   "count": 618360,
-   "share": 0.1559
+   "count": 618024,
+   "share": 0.1562
   },
   {
    "type": "Noise - Residential",
-   "count": 417592,
-   "share": 0.1053
+   "count": 415576,
+   "share": 0.105
   },
   {
    "type": "HEAT/HOT WATER",
-   "count": 352245,
-   "share": 0.0888
+   "count": 346875,
+   "share": 0.0877
   },
   {
    "type": "Blocked Driveway",
-   "count": 196088,
-   "share": 0.0494
+   "count": 195771,
+   "share": 0.0495
   },
   {
    "type": "Noise - Street/Sidewalk",
-   "count": 175159,
-   "share": 0.0442
+   "count": 174198,
+   "share": 0.044
   },
   {
    "type": "UNSANITARY CONDITION",
-   "count": 139459,
-   "share": 0.0352
+   "count": 139758,
+   "share": 0.0353
   },
   {
    "type": "Street Condition",
-   "count": 123222,
-   "share": 0.0311
+   "count": 123337,
+   "share": 0.0312
   },
   {
    "type": "PLUMBING",
-   "count": 85264,
-   "share": 0.0215
+   "count": 85351,
+   "share": 0.0216
   },
   {
    "type": "Abandoned Vehicle",
-   "count": 72356,
-   "share": 0.0182
+   "count": 72426,
+   "share": 0.0183
   },
   {
    "type": "Dirty Condition",
-   "count": 69630,
+   "count": 69813,
    "share": 0.0176
   },
   {
    "type": "PAINT/PLASTER",
-   "count": 69383,
-   "share": 0.0175
-  },
-  {
-   "type": "Water System",
-   "count": 64216,
-   "share": 0.0162
+   "count": 69475,
+   "share": 0.0176
   },
   {
    "type": "Snow or Ice",
    "count": 63941,
-   "share": 0.0161
+   "share": 0.0162
+  },
+  {
+   "type": "Water System",
+   "count": 63258,
+   "share": 0.016
   },
   {
    "type": "Noise",
-   "count": 61243,
-   "share": 0.0154
+   "count": 61307,
+   "share": 0.0155
   },
   {
    "type": "Noise - Commercial",
-   "count": 60911,
-   "share": 0.0154
+   "count": 60496,
+   "share": 0.0153
   }
  ],
  "neighborhoods": [
@@ -96,74 +96,74 @@
    "id": "Bronx CD1",
    "name": "Mott Haven & Melrose",
    "borough": "Bronx",
-   "total": 51467,
+   "total": 51354,
    "top": [
     {
-     "type": "HEAT/HOT WATER",
-     "count": 7334,
-     "share": 0.1425
+     "type": "Noise - Residential",
+     "count": 7337,
+     "share": 0.1429
     },
     {
-     "type": "Noise - Residential",
-     "count": 7305,
-     "share": 0.1419
+     "type": "HEAT/HOT WATER",
+     "count": 7181,
+     "share": 0.1398
     },
     {
      "type": "Illegal Parking",
-     "count": 6503,
-     "share": 0.1264
+     "count": 6510,
+     "share": 0.1268
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3149,
-     "share": 0.0612
+     "count": 3137,
+     "share": 0.0611
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3030,
-     "share": 0.0589
+     "count": 3042,
+     "share": 0.0592
     },
     {
      "type": "PLUMBING",
-     "count": 2070,
-     "share": 0.0402
+     "count": 2058,
+     "share": 0.0401
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1467,
-     "share": 0.0285
+     "count": 1481,
+     "share": 0.0288
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1229,
-     "share": 0.0239
+     "count": 1234,
+     "share": 0.024
     },
     {
      "type": "Blocked Driveway",
-     "count": 1206,
-     "share": 0.0234
+     "count": 1207,
+     "share": 0.0235
     },
     {
      "type": "Water System",
-     "count": 1185,
-     "share": 0.023
+     "count": 1170,
+     "share": 0.0228
     }
    ],
    "distinctive": [
     {
      "type": "Elevator",
-     "count": 779,
+     "count": 776,
      "x_citywide": 2.35
     },
     {
      "type": "APPLIANCE",
-     "count": 775,
-     "x_citywide": 2.25
+     "count": 783,
+     "x_citywide": 2.27
     },
     {
      "type": "PLUMBING",
-     "count": 2070,
-     "x_citywide": 1.87
+     "count": 2058,
+     "x_citywide": 1.86
     }
    ]
   },
@@ -171,73 +171,73 @@
    "id": "Bronx CD2",
    "name": "Hunts Point & Longwood",
    "borough": "Bronx",
-   "total": 29568,
+   "total": 29583,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 5095,
-     "share": 0.1723
+     "count": 5050,
+     "share": 0.1707
     },
     {
      "type": "Noise - Residential",
-     "count": 2932,
-     "share": 0.0992
+     "count": 2907,
+     "share": 0.0983
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2230,
+     "count": 2232,
      "share": 0.0754
     },
     {
      "type": "Illegal Parking",
-     "count": 2207,
-     "share": 0.0746
+     "count": 2199,
+     "share": 0.0743
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1655,
-     "share": 0.056
+     "count": 1672,
+     "share": 0.0565
     },
     {
      "type": "PLUMBING",
-     "count": 1443,
-     "share": 0.0488
+     "count": 1457,
+     "share": 0.0493
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1250,
-     "share": 0.0423
+     "count": 1264,
+     "share": 0.0427
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1020,
-     "share": 0.0345
+     "count": 1029,
+     "share": 0.0348
     },
     {
      "type": "Blocked Driveway",
-     "count": 929,
-     "share": 0.0314
+     "count": 925,
+     "share": 0.0313
     },
     {
      "type": "WATER LEAK",
-     "count": 761,
-     "share": 0.0257
+     "count": 764,
+     "share": 0.0258
     }
    ],
    "distinctive": [
     {
-     "type": "DOOR/WINDOW",
-     "count": 1020,
-     "x_citywide": 2.51
-    },
-    {
      "type": "APPLIANCE",
-     "count": 494,
-     "x_citywide": 2.5
+     "count": 503,
+     "x_citywide": 2.53
     },
     {
-     "type": "Elevator",
-     "count": 463,
+     "type": "DOOR/WINDOW",
+     "count": 1029,
+     "x_citywide": 2.52
+    },
+    {
+     "type": "PAINT/PLASTER",
+     "count": 1264,
      "x_citywide": 2.43
     }
    ]
@@ -246,74 +246,74 @@
    "id": "Bronx CD3",
    "name": "Morrisania & Crotona",
    "borough": "Bronx",
-   "total": 62178,
+   "total": 61935,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 14665,
-     "share": 0.2359
+     "count": 14577,
+     "share": 0.2354
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 7504,
-     "share": 0.1207
+     "count": 7408,
+     "share": 0.1196
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 5783,
+     "count": 5757,
      "share": 0.093
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3701,
-     "share": 0.0595
+     "count": 3704,
+     "share": 0.0598
     },
     {
      "type": "Illegal Parking",
-     "count": 3506,
-     "share": 0.0564
+     "count": 3514,
+     "share": 0.0567
     },
     {
      "type": "PLUMBING",
-     "count": 2244,
+     "count": 2235,
      "share": 0.0361
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1751,
-     "share": 0.0282
+     "count": 1762,
+     "share": 0.0284
     },
     {
      "type": "Blocked Driveway",
-     "count": 1738,
-     "share": 0.028
+     "count": 1727,
+     "share": 0.0279
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1724,
-     "share": 0.0277
+     "count": 1719,
+     "share": 0.0278
     },
     {
      "type": "Non-Emergency Police Matter",
-     "count": 1343,
-     "share": 0.0216
+     "count": 1341,
+     "share": 0.0217
     }
    ],
    "distinctive": [
     {
      "type": "Drinking",
-     "count": 387,
-     "x_citywide": 5.56
+     "count": 378,
+     "x_citywide": 5.45
     },
     {
      "type": "Non-Emergency Police Matter",
-     "count": 1343,
-     "x_citywide": 3.55
+     "count": 1341,
+     "x_citywide": 3.58
     },
     {
      "type": "Elevator",
-     "count": 1041,
-     "x_citywide": 2.6
+     "count": 1026,
+     "x_citywide": 2.58
     }
    ]
   },
@@ -321,74 +321,74 @@
    "id": "Bronx CD4",
    "name": "Highbridge & Concourse",
    "borough": "Bronx",
-   "total": 95380,
+   "total": 95159,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 17438,
-     "share": 0.1828
+     "count": 17283,
+     "share": 0.1816
     },
     {
      "type": "Noise - Residential",
-     "count": 9938,
-     "share": 0.1042
+     "count": 9935,
+     "share": 0.1044
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 8088,
-     "share": 0.0848
+     "count": 8111,
+     "share": 0.0852
     },
     {
      "type": "Illegal Parking",
-     "count": 7843,
-     "share": 0.0822
+     "count": 7869,
+     "share": 0.0827
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 7347,
-     "share": 0.077
+     "count": 7293,
+     "share": 0.0766
     },
     {
      "type": "PLUMBING",
-     "count": 4839,
+     "count": 4829,
      "share": 0.0507
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 3768,
-     "share": 0.0395
+     "count": 3772,
+     "share": 0.0396
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2637,
+     "count": 2625,
      "share": 0.0276
     },
     {
      "type": "WATER LEAK",
-     "count": 2460,
-     "share": 0.0258
+     "count": 2461,
+     "share": 0.0259
     },
     {
      "type": "Water System",
-     "count": 2082,
+     "count": 2078,
      "share": 0.0218
     }
    ],
    "distinctive": [
     {
-     "type": "Boilers",
-     "count": 229,
-     "x_citywide": 2.4
-    },
-    {
      "type": "Elevator",
      "count": 1472,
-     "x_citywide": 2.4
+     "x_citywide": 2.41
+    },
+    {
+     "type": "Boilers",
+     "count": 222,
+     "x_citywide": 2.37
     },
     {
      "type": "PLUMBING",
-     "count": 4839,
-     "x_citywide": 2.36
+     "count": 4829,
+     "x_citywide": 2.35
     }
    ]
   },
@@ -396,74 +396,74 @@
    "id": "Bronx CD5",
    "name": "Fordham & University Heights",
    "borough": "Bronx",
-   "total": 91049,
+   "total": 90975,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 14399,
-     "share": 0.1581
+     "count": 14189,
+     "share": 0.156
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 11602,
-     "share": 0.1274
+     "count": 11616,
+     "share": 0.1277
     },
     {
      "type": "Noise - Residential",
-     "count": 10749,
+     "count": 10743,
      "share": 0.1181
     },
     {
      "type": "Illegal Parking",
-     "count": 8052,
-     "share": 0.0884
+     "count": 8011,
+     "share": 0.0881
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 5867,
-     "share": 0.0644
+     "count": 5923,
+     "share": 0.0651
     },
     {
      "type": "PLUMBING",
-     "count": 4223,
-     "share": 0.0464
+     "count": 4227,
+     "share": 0.0465
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 3894,
-     "share": 0.0428
+     "count": 3930,
+     "share": 0.0432
     },
     {
      "type": "WATER LEAK",
-     "count": 2462,
-     "share": 0.027
+     "count": 2478,
+     "share": 0.0272
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2374,
-     "share": 0.0261
+     "count": 2386,
+     "share": 0.0262
     },
     {
      "type": "Blocked Driveway",
-     "count": 2267,
-     "share": 0.0249
+     "count": 2259,
+     "share": 0.0248
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 11602,
-     "x_citywide": 2.89
+     "count": 11616,
+     "x_citywide": 2.9
     },
     {
      "type": "FLOORING/STAIRS",
-     "count": 1940,
-     "x_citywide": 2.7
+     "count": 1953,
+     "x_citywide": 2.71
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 3894,
-     "x_citywide": 2.44
+     "count": 3930,
+     "x_citywide": 2.46
     }
    ]
   },
@@ -471,73 +471,73 @@
    "id": "Bronx CD6",
    "name": "Belmont & East Tremont",
    "borough": "Bronx",
-   "total": 54847,
+   "total": 54720,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 9117,
-     "share": 0.1662
+     "count": 8948,
+     "share": 0.1635
     },
     {
      "type": "Noise - Residential",
      "count": 6987,
-     "share": 0.1274
+     "share": 0.1277
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 4580,
-     "share": 0.0835
+     "count": 4587,
+     "share": 0.0838
     },
     {
      "type": "Illegal Parking",
-     "count": 3843,
-     "share": 0.0701
+     "count": 3875,
+     "share": 0.0708
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3691,
+     "count": 3680,
      "share": 0.0673
     },
     {
      "type": "PLUMBING",
-     "count": 2580,
-     "share": 0.047
+     "count": 2585,
+     "share": 0.0472
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2233,
-     "share": 0.0407
+     "count": 2223,
+     "share": 0.0406
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1817,
-     "share": 0.0331
+     "count": 1801,
+     "share": 0.0329
     },
     {
      "type": "Blocked Driveway",
-     "count": 1591,
-     "share": 0.029
+     "count": 1610,
+     "share": 0.0294
     },
     {
      "type": "WATER LEAK",
-     "count": 1572,
-     "share": 0.0287
+     "count": 1567,
+     "share": 0.0286
     }
    ],
    "distinctive": [
     {
      "type": "APPLIANCE",
-     "count": 1020,
-     "x_citywide": 2.78
+     "count": 1031,
+     "x_citywide": 2.8
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1817,
-     "x_citywide": 2.41
+     "count": 1801,
+     "x_citywide": 2.38
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 4580,
+     "count": 4587,
      "x_citywide": 2.37
     }
    ]
@@ -546,74 +546,74 @@
    "id": "Bronx CD7",
    "name": "Kingsbridge Heights & Bedford Park",
    "borough": "Bronx",
-   "total": 85072,
+   "total": 84813,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 18621,
-     "share": 0.2189
+     "count": 18330,
+     "share": 0.2161
     },
     {
      "type": "Noise - Residential",
-     "count": 10213,
-     "share": 0.1201
+     "count": 10176,
+     "share": 0.12
     },
     {
      "type": "Illegal Parking",
-     "count": 6813,
+     "count": 6797,
      "share": 0.0801
     },
     {
-     "type": "Noise - Street/Sidewalk",
-     "count": 5491,
-     "share": 0.0645
+     "type": "UNSANITARY CONDITION",
+     "count": 5500,
+     "share": 0.0648
     },
     {
-     "type": "UNSANITARY CONDITION",
-     "count": 5459,
-     "share": 0.0642
+     "type": "Noise - Street/Sidewalk",
+     "count": 5490,
+     "share": 0.0647
     },
     {
      "type": "PLUMBING",
-     "count": 3817,
-     "share": 0.0449
+     "count": 3825,
+     "share": 0.0451
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 3505,
-     "share": 0.0412
+     "count": 3520,
+     "share": 0.0415
     },
     {
      "type": "Blocked Driveway",
-     "count": 2612,
-     "share": 0.0307
+     "count": 2598,
+     "share": 0.0306
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2352,
-     "share": 0.0276
+     "count": 2371,
+     "share": 0.028
     },
     {
      "type": "WATER LEAK",
-     "count": 2104,
-     "share": 0.0247
+     "count": 2114,
+     "share": 0.0249
     }
    ],
    "distinctive": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 18621,
-     "x_citywide": 2.46
+     "count": 18330,
+     "x_citywide": 2.47
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 3505,
-     "x_citywide": 2.35
+     "count": 3520,
+     "x_citywide": 2.36
     },
     {
      "type": "FLOORING/STAIRS",
-     "count": 1533,
-     "x_citywide": 2.28
+     "count": 1525,
+     "x_citywide": 2.27
     }
    ]
   },
@@ -621,74 +621,74 @@
    "id": "Bronx CD8",
    "name": "Riverdale & Fieldston",
    "borough": "Bronx",
-   "total": 58911,
+   "total": 58705,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 13237,
-     "share": 0.2247
+     "count": 13152,
+     "share": 0.224
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 8104,
-     "share": 0.1376
+     "count": 7838,
+     "share": 0.1335
     },
     {
      "type": "Noise - Residential",
-     "count": 6811,
-     "share": 0.1156
+     "count": 6824,
+     "share": 0.1162
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3115,
-     "share": 0.0529
+     "count": 3117,
+     "share": 0.0531
     },
     {
      "type": "Blocked Driveway",
-     "count": 2136,
-     "share": 0.0363
+     "count": 2126,
+     "share": 0.0362
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2069,
-     "share": 0.0351
+     "count": 2081,
+     "share": 0.0354
     },
     {
      "type": "Street Condition",
-     "count": 1716,
-     "share": 0.0291
+     "count": 1723,
+     "share": 0.0294
     },
     {
      "type": "PLUMBING",
-     "count": 1483,
+     "count": 1477,
      "share": 0.0252
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1282,
-     "share": 0.0218
+     "count": 1304,
+     "share": 0.0222
     },
     {
      "type": "Dirty Condition",
-     "count": 979,
-     "share": 0.0166
+     "count": 978,
+     "share": 0.0167
     }
    ],
    "distinctive": [
     {
      "type": "Indoor Air Quality",
-     "count": 320,
-     "x_citywide": 1.99
+     "count": 330,
+     "x_citywide": 2.04
     },
     {
      "type": "Elevator",
-     "count": 663,
-     "x_citywide": 1.75
+     "count": 667,
+     "x_citywide": 1.77
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 8104,
-     "x_citywide": 1.55
+     "count": 7838,
+     "x_citywide": 1.52
     }
    ]
   },
@@ -696,73 +696,73 @@
    "id": "Bronx CD9",
    "name": "Parkchester & Soundview",
    "borough": "Bronx",
-   "total": 71032,
+   "total": 71137,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 10154,
-     "share": 0.1429
+     "count": 10085,
+     "share": 0.1418
     },
     {
      "type": "Noise - Residential",
-     "count": 9447,
-     "share": 0.133
+     "count": 9439,
+     "share": 0.1327
     },
     {
      "type": "Illegal Parking",
-     "count": 9184,
-     "share": 0.1293
+     "count": 9253,
+     "share": 0.1301
     },
     {
      "type": "Blocked Driveway",
-     "count": 3852,
-     "share": 0.0542
+     "count": 3843,
+     "share": 0.054
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3228,
-     "share": 0.0454
+     "count": 3247,
+     "share": 0.0456
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3020,
+     "count": 3026,
      "share": 0.0425
     },
     {
      "type": "PLUMBING",
-     "count": 2629,
-     "share": 0.037
-    },
-    {
-     "type": "Water System",
-     "count": 1934,
-     "share": 0.0272
+     "count": 2642,
+     "share": 0.0371
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1927,
-     "share": 0.0271
+     "count": 1939,
+     "share": 0.0273
+    },
+    {
+     "type": "Water System",
+     "count": 1917,
+     "share": 0.0269
     },
     {
      "type": "Street Condition",
-     "count": 1506,
-     "share": 0.0212
+     "count": 1503,
+     "share": 0.0211
     }
    ],
    "distinctive": [
     {
      "type": "Violation of Park Rules",
-     "count": 312,
-     "x_citywide": 3.57
+     "count": 319,
+     "x_citywide": 3.64
     },
     {
      "type": "Elevator",
-     "count": 856,
+     "count": 854,
      "x_citywide": 1.87
     },
     {
      "type": "PLUMBING",
-     "count": 2629,
+     "count": 2642,
      "x_citywide": 1.72
     }
    ]
@@ -771,52 +771,52 @@
    "id": "Bronx CD10",
    "name": "Throgs Neck & Co-op City",
    "borough": "Bronx",
-   "total": 46404,
+   "total": 46400,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 11568,
-     "share": 0.2493
+     "count": 11552,
+     "share": 0.249
     },
     {
      "type": "Noise - Residential",
-     "count": 3816,
-     "share": 0.0822
+     "count": 3823,
+     "share": 0.0824
     },
     {
      "type": "Blocked Driveway",
-     "count": 3140,
-     "share": 0.0677
+     "count": 3124,
+     "share": 0.0673
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3007,
-     "share": 0.0648
+     "count": 2964,
+     "share": 0.0639
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 2147,
-     "share": 0.0463
+     "count": 2182,
+     "share": 0.047
     },
     {
      "type": "Street Condition",
-     "count": 1392,
-     "share": 0.03
+     "count": 1397,
+     "share": 0.0301
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1088,
-     "share": 0.0234
+     "count": 1082,
+     "share": 0.0233
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1046,
-     "share": 0.0225
+     "count": 1047,
+     "share": 0.0226
     },
     {
      "type": "Street Light Condition",
-     "count": 1016,
-     "share": 0.0219
+     "count": 1034,
+     "share": 0.0223
     },
     {
      "type": "Snow or Ice",
@@ -827,18 +827,18 @@
    "distinctive": [
     {
      "type": "Abandoned Vehicle",
-     "count": 2147,
-     "x_citywide": 2.54
+     "count": 2182,
+     "x_citywide": 2.57
     },
     {
      "type": "Street Light Condition",
-     "count": 1016,
-     "x_citywide": 2.21
+     "count": 1034,
+     "x_citywide": 2.23
     },
     {
      "type": "Derelict Vehicles",
-     "count": 835,
-     "x_citywide": 2.0
+     "count": 836,
+     "x_citywide": 2.01
     }
    ]
   },
@@ -846,64 +846,64 @@
    "id": "Bronx CD11",
    "name": "Morris Park & Pelham Parkway",
    "borough": "Bronx",
-   "total": 54562,
+   "total": 54590,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 8062,
-     "share": 0.1478
+     "count": 8074,
+     "share": 0.1479
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 7368,
-     "share": 0.135
+     "count": 7262,
+     "share": 0.133
     },
     {
      "type": "Noise - Residential",
      "count": 6312,
-     "share": 0.1157
+     "share": 0.1156
     },
     {
      "type": "Blocked Driveway",
-     "count": 3667,
-     "share": 0.0672
+     "count": 3678,
+     "share": 0.0674
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2252,
-     "share": 0.0413
+     "count": 2268,
+     "share": 0.0415
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1991,
-     "share": 0.0365
+     "count": 1981,
+     "share": 0.0363
     },
     {
      "type": "Street Condition",
-     "count": 1442,
+     "count": 1439,
      "share": 0.0264
     },
     {
      "type": "PLUMBING",
-     "count": 1410,
-     "share": 0.0258
+     "count": 1422,
+     "share": 0.026
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1338,
-     "share": 0.0245
+     "count": 1358,
+     "share": 0.0249
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1208,
-     "share": 0.0221
+     "count": 1219,
+     "share": 0.0223
     }
    ],
    "distinctive": [
     {
      "type": "Drug Activity",
-     "count": 274,
-     "x_citywide": 2.24
+     "count": 272,
+     "x_citywide": 2.22
     },
     {
      "type": "Illegal Fireworks",
@@ -913,7 +913,7 @@
     {
      "type": "Animal-Abuse",
      "count": 259,
-     "x_citywide": 1.61
+     "x_citywide": 1.6
     }
    ]
   },
@@ -921,73 +921,73 @@
    "id": "Bronx CD12",
    "name": "Williamsbridge & Wakefield",
    "borough": "Bronx",
-   "total": 128272,
+   "total": 126862,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 55567,
-     "share": 0.4332
+     "count": 54639,
+     "share": 0.4307
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 11950,
-     "share": 0.0932
+     "count": 11700,
+     "share": 0.0922
     },
     {
      "type": "Illegal Parking",
-     "count": 11422,
-     "share": 0.089
+     "count": 11345,
+     "share": 0.0894
     },
     {
      "type": "Blocked Driveway",
-     "count": 6723,
-     "share": 0.0524
+     "count": 6717,
+     "share": 0.0529
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 4035,
-     "share": 0.0315
+     "count": 4045,
+     "share": 0.0319
     },
     {
      "type": "PLUMBING",
-     "count": 2550,
-     "share": 0.0199
+     "count": 2551,
+     "share": 0.0201
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1973,
-     "share": 0.0154
+     "count": 1945,
+     "share": 0.0153
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1953,
-     "share": 0.0152
+     "count": 1935,
+     "share": 0.0153
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1631,
-     "share": 0.0127
+     "count": 1629,
+     "share": 0.0128
     },
     {
-     "type": "Derelict Vehicles",
-     "count": 1600,
+     "type": "Street Condition",
+     "count": 1583,
      "share": 0.0125
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Residential",
-     "count": 55567,
-     "x_citywide": 4.11
+     "count": 54639,
+     "x_citywide": 4.1
     },
     {
      "type": "Derelict Vehicles",
-     "count": 1600,
+     "count": 1580,
      "x_citywide": 1.39
     },
     {
      "type": "Water Conservation",
-     "count": 285,
+     "count": 283,
      "x_citywide": 1.37
     }
    ]
@@ -996,74 +996,74 @@
    "id": "Brooklyn CD1",
    "name": "Williamsburg & Greenpoint",
    "borough": "Brooklyn",
-   "total": 99422,
+   "total": 99474,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 20259,
-     "share": 0.2038
+     "count": 20376,
+     "share": 0.2048
     },
     {
      "type": "Noise - Residential",
-     "count": 8964,
-     "share": 0.0902
+     "count": 8877,
+     "share": 0.0892
     },
     {
      "type": "Noise - Commercial",
-     "count": 5034,
+     "count": 5030,
      "share": 0.0506
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4999,
-     "share": 0.0503
+     "count": 4964,
+     "share": 0.0499
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 4822,
-     "share": 0.0485
+     "count": 4838,
+     "share": 0.0486
     },
     {
      "type": "Blocked Driveway",
-     "count": 3641,
-     "share": 0.0366
+     "count": 3622,
+     "share": 0.0364
     },
     {
      "type": "Noise",
-     "count": 2723,
-     "share": 0.0274
-    },
-    {
-     "type": "Graffiti",
-     "count": 2675,
-     "share": 0.0269
-    },
-    {
-     "type": "Street Condition",
-     "count": 2598,
-     "share": 0.0261
+     "count": 2756,
+     "share": 0.0277
     },
     {
      "type": "Dirty Condition",
-     "count": 2593,
+     "count": 2611,
+     "share": 0.0262
+    },
+    {
+     "type": "Street Condition",
+     "count": 2601,
      "share": 0.0261
+    },
+    {
+     "type": "Graffiti",
+     "count": 2579,
+     "share": 0.0259
     }
    ],
    "distinctive": [
     {
      "type": "Animal in a Park",
-     "count": 902,
-     "x_citywide": 6.27
+     "count": 893,
+     "x_citywide": 6.21
     },
     {
      "type": "Graffiti",
-     "count": 2675,
-     "x_citywide": 6.17
+     "count": 2579,
+     "x_citywide": 6.01
     },
     {
      "type": "Noise - Commercial",
-     "count": 5034,
-     "x_citywide": 3.3
+     "count": 5030,
+     "x_citywide": 3.31
     }
    ]
   },
@@ -1071,73 +1071,73 @@
    "id": "Brooklyn CD2",
    "name": "Downtown Brooklyn, Fort Greene & Brooklyn Heights",
    "borough": "Brooklyn",
-   "total": 80904,
+   "total": 80998,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 29936,
-     "share": 0.37
+     "count": 30042,
+     "share": 0.3709
     },
     {
      "type": "Noise - Residential",
-     "count": 6996,
-     "share": 0.0865
+     "count": 6965,
+     "share": 0.086
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3822,
-     "share": 0.0472
+     "count": 3809,
+     "share": 0.047
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3171,
-     "share": 0.0392
+     "count": 3164,
+     "share": 0.0391
     },
     {
      "type": "Noise",
-     "count": 2172,
+     "count": 2174,
      "share": 0.0268
     },
     {
      "type": "Street Condition",
-     "count": 1789,
-     "share": 0.0221
+     "count": 1779,
+     "share": 0.022
     },
     {
      "type": "Vendor Enforcement",
-     "count": 1725,
-     "share": 0.0213
+     "count": 1733,
+     "share": 0.0214
     },
     {
      "type": "Blocked Driveway",
-     "count": 1529,
+     "count": 1532,
      "share": 0.0189
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1334,
-     "share": 0.0165
+     "count": 1314,
+     "share": 0.0162
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1251,
-     "share": 0.0155
+     "count": 1248,
+     "share": 0.0154
     }
    ],
    "distinctive": [
     {
      "type": "Vendor Enforcement",
-     "count": 1725,
-     "x_citywide": 3.54
+     "count": 1733,
+     "x_citywide": 3.57
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1251,
-     "x_citywide": 3.22
+     "count": 1248,
+     "x_citywide": 3.21
     },
     {
      "type": "Illegal Parking",
-     "count": 29936,
+     "count": 30042,
      "x_citywide": 2.37
     }
    ]
@@ -1146,64 +1146,64 @@
    "id": "Brooklyn CD3",
    "name": "Bed-Stuy",
    "borough": "Brooklyn",
-   "total": 78254,
+   "total": 78287,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 8034,
-     "share": 0.1027
+     "count": 7948,
+     "share": 0.1015
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 7798,
-     "share": 0.0996
+     "count": 7737,
+     "share": 0.0988
     },
     {
      "type": "Illegal Parking",
-     "count": 7559,
-     "share": 0.0966
+     "count": 7674,
+     "share": 0.098
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3913,
+     "count": 3917,
      "share": 0.05
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3498,
-     "share": 0.0447
+     "count": 3494,
+     "share": 0.0446
     },
     {
      "type": "Dirty Condition",
-     "count": 2336,
-     "share": 0.0299
+     "count": 2321,
+     "share": 0.0296
     },
     {
      "type": "PLUMBING",
      "count": 2289,
-     "share": 0.0293
+     "share": 0.0292
     },
     {
      "type": "Blocked Driveway",
-     "count": 2111,
-     "share": 0.027
+     "count": 2121,
+     "share": 0.0271
     },
     {
      "type": "Street Condition",
-     "count": 1931,
-     "share": 0.0247
+     "count": 1942,
+     "share": 0.0248
     },
     {
-     "type": "WATER LEAK",
-     "count": 1796,
-     "share": 0.023
+     "type": "DOOR/WINDOW",
+     "count": 1784,
+     "share": 0.0228
     }
    ],
    "distinctive": [
     {
      "type": "Rodent",
-     "count": 1417,
-     "x_citywide": 2.76
+     "count": 1424,
+     "x_citywide": 2.74
     },
     {
      "type": "Residential Disposal Complaint",
@@ -1212,8 +1212,8 @@
     },
     {
      "type": "Street Sweeping Complaint",
-     "count": 362,
-     "x_citywide": 2.18
+     "count": 367,
+     "x_citywide": 2.19
     }
    ]
   },
@@ -1221,74 +1221,74 @@
    "id": "Brooklyn CD4",
    "name": "Bushwick",
    "borough": "Brooklyn",
-   "total": 58858,
+   "total": 58614,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 6835,
-     "share": 0.1161
+     "count": 6755,
+     "share": 0.1152
     },
     {
      "type": "Illegal Parking",
-     "count": 5799,
+     "count": 5775,
      "share": 0.0985
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 4409,
-     "share": 0.0749
+     "count": 4360,
+     "share": 0.0744
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3861,
-     "share": 0.0656
+     "count": 3810,
+     "share": 0.065
     },
     {
      "type": "Blocked Driveway",
-     "count": 3464,
-     "share": 0.0589
+     "count": 3462,
+     "share": 0.0591
     },
     {
      "type": "Noise - Commercial",
-     "count": 2705,
-     "share": 0.046
+     "count": 2692,
+     "share": 0.0459
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2390,
+     "count": 2382,
      "share": 0.0406
     },
     {
      "type": "Dirty Condition",
-     "count": 1832,
-     "share": 0.0311
+     "count": 1828,
+     "share": 0.0312
     },
     {
      "type": "Water System",
-     "count": 1432,
-     "share": 0.0243
+     "count": 1421,
+     "share": 0.0242
     },
     {
      "type": "Noise",
-     "count": 1341,
+     "count": 1337,
      "share": 0.0228
     }
    ],
    "distinctive": [
     {
      "type": "Smoking or Vaping",
-     "count": 420,
-     "x_citywide": 3.44
+     "count": 416,
+     "x_citywide": 3.42
     },
     {
      "type": "Noise - Commercial",
-     "count": 2705,
-     "x_citywide": 2.99
+     "count": 2692,
+     "x_citywide": 3.0
     },
     {
      "type": "Graffiti",
-     "count": 741,
-     "x_citywide": 2.89
+     "count": 737,
+     "x_citywide": 2.92
     }
    ]
   },
@@ -1296,74 +1296,74 @@
    "id": "Brooklyn CD5",
    "name": "East New York & Cypress Hills",
    "borough": "Brooklyn",
-   "total": 98555,
+   "total": 98268,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 18908,
+     "count": 18862,
      "share": 0.1919
     },
     {
      "type": "Noise - Residential",
-     "count": 9767,
-     "share": 0.0991
+     "count": 9696,
+     "share": 0.0987
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 8531,
-     "share": 0.0866
+     "count": 8403,
+     "share": 0.0855
     },
     {
      "type": "Blocked Driveway",
-     "count": 8218,
-     "share": 0.0834
+     "count": 8187,
+     "share": 0.0833
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 7554,
-     "share": 0.0766
+     "count": 7640,
+     "share": 0.0777
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3875,
-     "share": 0.0393
+     "count": 3876,
+     "share": 0.0394
     },
     {
      "type": "PLUMBING",
-     "count": 2360,
-     "share": 0.0239
-    },
-    {
-     "type": "Noise - Street/Sidewalk",
-     "count": 2100,
-     "share": 0.0213
+     "count": 2364,
+     "share": 0.0241
     },
     {
      "type": "Street Condition",
-     "count": 2080,
-     "share": 0.0211
+     "count": 2093,
+     "share": 0.0213
+    },
+    {
+     "type": "Noise - Street/Sidewalk",
+     "count": 2087,
+     "share": 0.0212
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1777,
-     "share": 0.018
+     "count": 1762,
+     "share": 0.0179
     }
    ],
    "distinctive": [
     {
      "type": "Abandoned Vehicle",
-     "count": 7554,
-     "x_citywide": 4.2
+     "count": 7640,
+     "x_citywide": 4.25
     },
     {
      "type": "Illegal Posting",
-     "count": 456,
-     "x_citywide": 3.37
+     "count": 452,
+     "x_citywide": 3.29
     },
     {
      "type": "Cannabis Retailer",
-     "count": 279,
-     "x_citywide": 2.49
+     "count": 281,
+     "x_citywide": 2.51
     }
    ]
   },
@@ -1371,41 +1371,41 @@
    "id": "Brooklyn CD6",
    "name": "Park Slope, Carroll Gardens & Red Hook",
    "borough": "Brooklyn",
-   "total": 58808,
+   "total": 58826,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 16444,
-     "share": 0.2796
+     "count": 16587,
+     "share": 0.282
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2869,
-     "share": 0.0488
+     "count": 2807,
+     "share": 0.0477
     },
     {
      "type": "Noise - Residential",
-     "count": 2672,
-     "share": 0.0454
+     "count": 2661,
+     "share": 0.0452
     },
     {
      "type": "Noise",
-     "count": 2213,
+     "count": 2210,
      "share": 0.0376
     },
     {
      "type": "Street Condition",
-     "count": 1810,
-     "share": 0.0308
+     "count": 1821,
+     "share": 0.031
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1627,
-     "share": 0.0277
+     "count": 1606,
+     "share": 0.0273
     },
     {
      "type": "Blocked Driveway",
-     "count": 1555,
+     "count": 1552,
      "share": 0.0264
     },
     {
@@ -1415,30 +1415,30 @@
     },
     {
      "type": "Damaged Tree",
-     "count": 1396,
-     "share": 0.0237
+     "count": 1390,
+     "share": 0.0236
     },
     {
      "type": "Dirty Condition",
-     "count": 1265,
+     "count": 1263,
      "share": 0.0215
     }
    ],
    "distinctive": [
     {
      "type": "Curb Condition",
-     "count": 513,
-     "x_citywide": 3.91
+     "count": 508,
+     "x_citywide": 3.89
     },
     {
      "type": "Lead",
-     "count": 588,
-     "x_citywide": 2.71
+     "count": 591,
+     "x_citywide": 2.75
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 709,
-     "x_citywide": 2.51
+     "count": 704,
+     "x_citywide": 2.49
     }
    ]
   },
@@ -1446,74 +1446,74 @@
    "id": "Brooklyn CD7",
    "name": "Sunset Park & Windsor Terrace",
    "borough": "Brooklyn",
-   "total": 47312,
+   "total": 47184,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 9080,
-     "share": 0.1919
+     "count": 9074,
+     "share": 0.1923
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2714,
-     "share": 0.0574
+     "count": 2669,
+     "share": 0.0566
     },
     {
      "type": "Blocked Driveway",
-     "count": 2643,
-     "share": 0.0559
+     "count": 2640,
+     "share": 0.056
     },
     {
      "type": "Noise - Residential",
-     "count": 2473,
-     "share": 0.0523
-    },
-    {
-     "type": "Noise - Street/Sidewalk",
-     "count": 1750,
-     "share": 0.037
+     "count": 2452,
+     "share": 0.052
     },
     {
      "type": "Street Condition",
-     "count": 1736,
-     "share": 0.0367
+     "count": 1741,
+     "share": 0.0369
+    },
+    {
+     "type": "Noise - Street/Sidewalk",
+     "count": 1729,
+     "share": 0.0366
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1182,
+     "count": 1180,
      "share": 0.025
     },
     {
      "type": "Dirty Condition",
-     "count": 1087,
-     "share": 0.023
+     "count": 1094,
+     "share": 0.0232
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1076,
-     "share": 0.0227
+     "count": 1093,
+     "share": 0.0232
     },
     {
      "type": "Noise - Commercial",
-     "count": 1054,
-     "share": 0.0223
+     "count": 1023,
+     "share": 0.0217
     }
    ],
    "distinctive": [
     {
      "type": "Graffiti",
-     "count": 543,
-     "x_citywide": 2.63
+     "count": 561,
+     "x_citywide": 2.76
     },
     {
      "type": "Maintenance or Facility",
-     "count": 715,
-     "x_citywide": 2.08
+     "count": 713,
+     "x_citywide": 2.07
     },
     {
      "type": "Obstruction",
-     "count": 512,
-     "x_citywide": 1.95
+     "count": 508,
+     "x_citywide": 1.93
     }
    ]
   },
@@ -1521,73 +1521,73 @@
    "id": "Brooklyn CD8",
    "name": "Crown Heights North & Prospect Heights",
    "borough": "Brooklyn",
-   "total": 63079,
+   "total": 62946,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 8281,
-     "share": 0.1313
+     "count": 8319,
+     "share": 0.1322
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 8114,
-     "share": 0.1286
+     "count": 8018,
+     "share": 0.1274
     },
     {
      "type": "Noise - Residential",
-     "count": 5406,
-     "share": 0.0857
+     "count": 5388,
+     "share": 0.0856
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3234,
-     "share": 0.0513
+     "count": 3233,
+     "share": 0.0514
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2956,
-     "share": 0.0469
+     "count": 2960,
+     "share": 0.047
     },
     {
      "type": "PLUMBING",
-     "count": 2040,
+     "count": 2034,
      "share": 0.0323
     },
     {
-     "type": "Noise - Helicopter",
-     "count": 1793,
-     "share": 0.0284
-    },
-    {
      "type": "PAINT/PLASTER",
-     "count": 1788,
+     "count": 1780,
      "share": 0.0283
     },
     {
+     "type": "Noise - Helicopter",
+     "count": 1743,
+     "share": 0.0277
+    },
+    {
      "type": "Blocked Driveway",
-     "count": 1619,
-     "share": 0.0257
+     "count": 1606,
+     "share": 0.0255
     },
     {
      "type": "Noise - Commercial",
-     "count": 1553,
-     "share": 0.0246
+     "count": 1542,
+     "share": 0.0245
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Helicopter",
-     "count": 1793,
-     "x_citywide": 10.27
+     "count": 1743,
+     "x_citywide": 10.38
     },
     {
      "type": "Rodent",
-     "count": 809,
-     "x_citywide": 1.95
+     "count": 817,
+     "x_citywide": 1.96
     },
     {
      "type": "WATER LEAK",
-     "count": 1516,
+     "count": 1521,
      "x_citywide": 1.94
     }
    ]
@@ -1596,73 +1596,73 @@
    "id": "Brooklyn CD9",
    "name": "Crown Heights South & Prospect Lefferts",
    "borough": "Brooklyn",
-   "total": 58644,
+   "total": 58421,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 7920,
-     "share": 0.1351
+     "count": 7809,
+     "share": 0.1337
     },
     {
      "type": "Illegal Parking",
-     "count": 6905,
-     "share": 0.1177
+     "count": 6988,
+     "share": 0.1196
     },
     {
      "type": "Noise - Residential",
-     "count": 6835,
-     "share": 0.1166
+     "count": 6742,
+     "share": 0.1154
     },
     {
      "type": "UNSANITARY CONDITION",
      "count": 3359,
-     "share": 0.0573
+     "share": 0.0575
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2788,
-     "share": 0.0475
+     "count": 2781,
+     "share": 0.0476
     },
     {
      "type": "PLUMBING",
-     "count": 2236,
-     "share": 0.0381
+     "count": 2212,
+     "share": 0.0379
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2067,
-     "share": 0.0352
+     "count": 2066,
+     "share": 0.0354
     },
     {
      "type": "Blocked Driveway",
-     "count": 1940,
+     "count": 1932,
      "share": 0.0331
     },
     {
      "type": "WATER LEAK",
-     "count": 1548,
-     "share": 0.0264
+     "count": 1551,
+     "share": 0.0265
     },
     {
      "type": "Dirty Condition",
-     "count": 1382,
-     "share": 0.0236
+     "count": 1367,
+     "share": 0.0234
     }
    ],
    "distinctive": [
     {
      "type": "FLOORING/STAIRS",
-     "count": 1066,
+     "count": 1065,
      "x_citywide": 2.3
     },
     {
      "type": "WATER LEAK",
-     "count": 1548,
+     "count": 1551,
      "x_citywide": 2.13
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2067,
+     "count": 2066,
      "x_citywide": 2.01
     }
    ]
@@ -1671,32 +1671,32 @@
    "id": "Brooklyn CD10",
    "name": "Bay Ridge & Dyker Heights",
    "borough": "Brooklyn",
-   "total": 55978,
+   "total": 55800,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 18546,
-     "share": 0.3313
+     "count": 18494,
+     "share": 0.3314
     },
     {
      "type": "Blocked Driveway",
-     "count": 4171,
+     "count": 4157,
      "share": 0.0745
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3860,
-     "share": 0.069
+     "count": 3813,
+     "share": 0.0683
     },
     {
      "type": "Noise - Residential",
-     "count": 2666,
-     "share": 0.0476
+     "count": 2671,
+     "share": 0.0479
     },
     {
      "type": "Street Condition",
-     "count": 1525,
-     "share": 0.0272
+     "count": 1523,
+     "share": 0.0273
     },
     {
      "type": "Snow or Ice",
@@ -1705,40 +1705,40 @@
     },
     {
      "type": "Damaged Tree",
-     "count": 1179,
-     "share": 0.0211
+     "count": 1170,
+     "share": 0.021
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1084,
+     "count": 1083,
      "share": 0.0194
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 891,
+     "count": 890,
      "share": 0.0159
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 859,
-     "share": 0.0153
+     "count": 849,
+     "share": 0.0152
     }
    ],
    "distinctive": [
     {
      "type": "Dead/Dying Tree",
-     "count": 411,
-     "x_citywide": 2.54
+     "count": 410,
+     "x_citywide": 2.55
     },
     {
      "type": "Illegal Parking",
-     "count": 18546,
+     "count": 18494,
      "x_citywide": 2.12
     },
     {
      "type": "Illegal Tree Damage",
-     "count": 208,
-     "x_citywide": 2.07
+     "count": 209,
+     "x_citywide": 2.09
     }
    ]
   },
@@ -1746,42 +1746,42 @@
    "id": "Brooklyn CD11",
    "name": "Bensonhurst & Bath Beach",
    "borough": "Brooklyn",
-   "total": 81804,
+   "total": 81944,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 26821,
-     "share": 0.3279
+     "count": 26824,
+     "share": 0.3273
     },
     {
      "type": "Noise - Residential",
-     "count": 13104,
-     "share": 0.1602
+     "count": 13257,
+     "share": 0.1618
     },
     {
      "type": "Blocked Driveway",
-     "count": 8182,
-     "share": 0.1
+     "count": 8181,
+     "share": 0.0998
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3974,
-     "share": 0.0486
+     "count": 3926,
+     "share": 0.0479
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1613,
-     "share": 0.0197
+     "count": 1619,
+     "share": 0.0198
     },
     {
      "type": "Street Condition",
-     "count": 1471,
+     "count": 1472,
      "share": 0.018
     },
     {
      "type": "Damaged Tree",
-     "count": 1407,
-     "share": 0.0172
+     "count": 1400,
+     "share": 0.0171
     },
     {
      "type": "Snow or Ice",
@@ -1790,29 +1790,29 @@
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1109,
-     "share": 0.0136
+     "count": 1104,
+     "share": 0.0135
     },
     {
      "type": "General Construction/Plumbing",
-     "count": 1059,
-     "share": 0.0129
+     "count": 1065,
+     "share": 0.013
     }
    ],
    "distinctive": [
     {
      "type": "Real Time Enforcement",
-     "count": 370,
-     "x_citywide": 2.84
+     "count": 369,
+     "x_citywide": 2.82
     },
     {
      "type": "Illegal Parking",
-     "count": 26821,
+     "count": 26824,
      "x_citywide": 2.1
     },
     {
      "type": "Blocked Driveway",
-     "count": 8182,
+     "count": 8181,
      "x_citywide": 2.02
     }
    ]
@@ -1821,52 +1821,52 @@
    "id": "Brooklyn CD12",
    "name": "Borough Park & Kensington",
    "borough": "Brooklyn",
-   "total": 60052,
+   "total": 60027,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 14807,
-     "share": 0.2466
+     "count": 14769,
+     "share": 0.246
     },
     {
      "type": "Blocked Driveway",
-     "count": 4289,
-     "share": 0.0714
+     "count": 4312,
+     "share": 0.0718
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3736,
-     "share": 0.0622
+     "count": 3661,
+     "share": 0.061
     },
     {
      "type": "Noise - Residential",
-     "count": 3175,
-     "share": 0.0529
+     "count": 3190,
+     "share": 0.0531
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2290,
-     "share": 0.0381
+     "count": 2277,
+     "share": 0.0379
     },
     {
      "type": "Street Condition",
-     "count": 2154,
-     "share": 0.0359
+     "count": 2159,
+     "share": 0.036
     },
     {
      "type": "General Construction/Plumbing",
-     "count": 1783,
-     "share": 0.0297
+     "count": 1796,
+     "share": 0.0299
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1460,
-     "share": 0.0243
+     "count": 1455,
+     "share": 0.0242
     },
     {
      "type": "Damaged Tree",
-     "count": 1269,
-     "share": 0.0211
+     "count": 1256,
+     "share": 0.0209
     },
     {
      "type": "Snow or Ice",
@@ -1877,18 +1877,18 @@
    "distinctive": [
     {
      "type": "Real Time Enforcement",
-     "count": 494,
-     "x_citywide": 5.17
+     "count": 497,
+     "x_citywide": 5.19
     },
     {
      "type": "Illegal Posting",
-     "count": 268,
-     "x_citywide": 3.25
+     "count": 265,
+     "x_citywide": 3.16
     },
     {
      "type": "General Construction/Plumbing",
-     "count": 1783,
-     "x_citywide": 2.9
+     "count": 1796,
+     "x_citywide": 2.92
     }
    ]
   },
@@ -1896,73 +1896,73 @@
    "id": "Brooklyn CD13",
    "name": "Coney Island & Brighton Beach",
    "borough": "Brooklyn",
-   "total": 36088,
+   "total": 35878,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 8923,
+     "count": 8871,
      "share": 0.2473
     },
     {
      "type": "Noise - Residential",
-     "count": 4149,
-     "share": 0.115
+     "count": 4169,
+     "share": 0.1162
     },
     {
      "type": "Blocked Driveway",
-     "count": 2985,
-     "share": 0.0827
+     "count": 2969,
+     "share": 0.0828
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2200,
-     "share": 0.061
+     "count": 2145,
+     "share": 0.0598
     },
     {
      "type": "Noise - Street/Sidewalk",
      "count": 1230,
-     "share": 0.0341
+     "share": 0.0343
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1130,
-     "share": 0.0313
+     "count": 1137,
+     "share": 0.0317
     },
     {
      "type": "Street Condition",
-     "count": 761,
-     "share": 0.0211
+     "count": 766,
+     "share": 0.0214
     },
     {
      "type": "Dirty Condition",
-     "count": 625,
-     "share": 0.0173
+     "count": 623,
+     "share": 0.0174
     },
     {
      "type": "PLUMBING",
      "count": 598,
-     "share": 0.0166
+     "share": 0.0167
     },
     {
-     "type": "General Construction/Plumbing",
-     "count": 586,
-     "share": 0.0162
+     "type": "Snow or Ice",
+     "count": 536,
+     "share": 0.0149
     }
    ],
    "distinctive": [
     {
      "type": "Consumer Complaint",
-     "count": 460,
-     "x_citywide": 2.39
+     "count": 464,
+     "x_citywide": 2.42
     },
     {
      "type": "Maintenance or Facility",
-     "count": 510,
-     "x_citywide": 1.95
+     "count": 507,
+     "x_citywide": 1.94
     },
     {
      "type": "Blocked Driveway",
-     "count": 2985,
+     "count": 2969,
      "x_citywide": 1.67
     }
    ]
@@ -1971,74 +1971,74 @@
    "id": "Brooklyn CD14",
    "name": "Flatbush & Midwood",
    "borough": "Brooklyn",
-   "total": 84747,
+   "total": 84499,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 12801,
-     "share": 0.151
+     "count": 12601,
+     "share": 0.1491
     },
     {
      "type": "Illegal Parking",
-     "count": 11696,
-     "share": 0.138
+     "count": 11756,
+     "share": 0.1391
     },
     {
      "type": "Noise - Residential",
-     "count": 8966,
-     "share": 0.1058
+     "count": 9015,
+     "share": 0.1067
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 4720,
-     "share": 0.0557
+     "count": 4718,
+     "share": 0.0558
     },
     {
      "type": "Blocked Driveway",
-     "count": 4398,
-     "share": 0.0519
+     "count": 4369,
+     "share": 0.0517
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2822,
+     "count": 2815,
      "share": 0.0333
     },
     {
      "type": "PLUMBING",
-     "count": 2636,
-     "share": 0.0311
+     "count": 2634,
+     "share": 0.0312
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2435,
-     "share": 0.0287
+     "count": 2439,
+     "share": 0.0289
     },
     {
      "type": "WATER LEAK",
-     "count": 1855,
+     "count": 1854,
      "share": 0.0219
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1807,
+     "count": 1803,
      "share": 0.0213
     }
    ],
    "distinctive": [
     {
      "type": "PAINT/PLASTER",
-     "count": 2822,
+     "count": 2815,
      "x_citywide": 1.9
     },
     {
      "type": "Illegal Fireworks",
-     "count": 436,
+     "count": 435,
      "x_citywide": 1.87
     },
     {
      "type": "Real Time Enforcement",
-     "count": 246,
-     "x_citywide": 1.82
+     "count": 249,
+     "x_citywide": 1.85
     }
    ]
   },
@@ -2046,73 +2046,73 @@
    "id": "Brooklyn CD15",
    "name": "Sheepshead Bay & Gravesend",
    "borough": "Brooklyn",
-   "total": 68721,
+   "total": 68514,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 16778,
-     "share": 0.2441
+     "count": 16803,
+     "share": 0.2452
     },
     {
      "type": "Blocked Driveway",
-     "count": 6624,
-     "share": 0.0964
+     "count": 6631,
+     "share": 0.0968
     },
     {
      "type": "Noise - Residential",
-     "count": 5709,
-     "share": 0.0831
+     "count": 5685,
+     "share": 0.083
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4193,
-     "share": 0.061
+     "count": 4087,
+     "share": 0.0597
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 2518,
-     "share": 0.0366
+     "count": 2522,
+     "share": 0.0368
     },
     {
      "type": "Street Condition",
-     "count": 1826,
-     "share": 0.0266
+     "count": 1816,
+     "share": 0.0265
     },
     {
      "type": "General Construction/Plumbing",
-     "count": 1747,
-     "share": 0.0254
+     "count": 1746,
+     "share": 0.0255
     },
     {
      "type": "Dirty Condition",
-     "count": 1668,
+     "count": 1664,
      "share": 0.0243
     },
     {
      "type": "Snow or Ice",
      "count": 1614,
-     "share": 0.0235
+     "share": 0.0236
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1270,
-     "share": 0.0185
+     "count": 1282,
+     "share": 0.0187
     }
    ],
    "distinctive": [
     {
      "type": "General Construction/Plumbing",
-     "count": 1747,
-     "x_citywide": 2.48
+     "count": 1746,
+     "x_citywide": 2.49
     },
     {
      "type": "Sewer Maintenance",
-     "count": 480,
-     "x_citywide": 2.26
+     "count": 490,
+     "x_citywide": 2.22
     },
     {
      "type": "Sidewalk Condition",
-     "count": 991,
+     "count": 992,
      "x_citywide": 2.15
     }
    ]
@@ -2121,74 +2121,74 @@
    "id": "Brooklyn CD16",
    "name": "Brownsville & Ocean Hill",
    "borough": "Brooklyn",
-   "total": 41488,
+   "total": 41377,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 6213,
-     "share": 0.1498
+     "count": 6088,
+     "share": 0.1471
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4134,
-     "share": 0.0996
+     "count": 4077,
+     "share": 0.0985
     },
     {
      "type": "Illegal Parking",
-     "count": 3205,
-     "share": 0.0773
+     "count": 3212,
+     "share": 0.0776
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2637,
-     "share": 0.0636
+     "count": 2645,
+     "share": 0.0639
     },
     {
      "type": "Blocked Driveway",
-     "count": 1842,
+     "count": 1838,
      "share": 0.0444
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1735,
-     "share": 0.0418
+     "count": 1733,
+     "share": 0.0419
     },
     {
      "type": "PLUMBING",
-     "count": 1632,
-     "share": 0.0393
+     "count": 1640,
+     "share": 0.0396
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1201,
-     "share": 0.0289
+     "count": 1217,
+     "share": 0.0294
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1167,
-     "share": 0.0281
+     "count": 1187,
+     "share": 0.0287
     },
     {
      "type": "WATER LEAK",
-     "count": 1058,
-     "share": 0.0255
+     "count": 1059,
+     "share": 0.0256
     }
    ],
    "distinctive": [
     {
      "type": "Non-Emergency Police Matter",
-     "count": 668,
-     "x_citywide": 2.65
+     "count": 649,
+     "x_citywide": 2.59
     },
     {
      "type": "Animal-Abuse",
-     "count": 303,
-     "x_citywide": 2.48
+     "count": 314,
+     "x_citywide": 2.56
     },
     {
      "type": "APPLIANCE",
-     "count": 632,
-     "x_citywide": 2.28
+     "count": 640,
+     "x_citywide": 2.3
     }
    ]
   },
@@ -2196,73 +2196,73 @@
    "id": "Brooklyn CD17",
    "name": "East Flatbush",
    "borough": "Brooklyn",
-   "total": 75982,
+   "total": 75949,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 10167,
-     "share": 0.1338
+     "count": 9994,
+     "share": 0.1316
     },
     {
      "type": "Noise - Residential",
-     "count": 8140,
-     "share": 0.1071
+     "count": 8110,
+     "share": 0.1068
     },
     {
      "type": "Illegal Parking",
-     "count": 6915,
-     "share": 0.091
+     "count": 6924,
+     "share": 0.0912
     },
     {
      "type": "Blocked Driveway",
-     "count": 5624,
+     "count": 5620,
      "share": 0.074
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 5013,
-     "share": 0.066
+     "count": 5046,
+     "share": 0.0664
     },
     {
      "type": "PLUMBING",
-     "count": 3004,
-     "share": 0.0395
+     "count": 3010,
+     "share": 0.0396
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2712,
-     "share": 0.0357
+     "count": 2720,
+     "share": 0.0358
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2589,
+     "count": 2592,
      "share": 0.0341
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2080,
-     "share": 0.0274
+     "count": 2088,
+     "share": 0.0275
     },
     {
      "type": "WATER LEAK",
-     "count": 2043,
-     "share": 0.0269
+     "count": 2037,
+     "share": 0.0268
     }
    ],
    "distinctive": [
     {
      "type": "WATER LEAK",
-     "count": 2043,
-     "x_citywide": 2.17
-    },
-    {
-     "type": "ELECTRIC",
-     "count": 1475,
-     "x_citywide": 2.12
+     "count": 2037,
+     "x_citywide": 2.15
     },
     {
      "type": "APPLIANCE",
-     "count": 1071,
+     "count": 1081,
+     "x_citywide": 2.12
+    },
+    {
+     "type": "ELECTRIC",
+     "count": 1472,
      "x_citywide": 2.11
     }
    ]
@@ -2271,74 +2271,74 @@
    "id": "Brooklyn CD18",
    "name": "Canarsie & Flatlands",
    "borough": "Brooklyn",
-   "total": 60959,
+   "total": 60677,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 10580,
-     "share": 0.1736
+     "count": 10496,
+     "share": 0.173
     },
     {
      "type": "Blocked Driveway",
-     "count": 6338,
-     "share": 0.104
+     "count": 6300,
+     "share": 0.1038
     },
     {
      "type": "Noise - Residential",
-     "count": 4853,
-     "share": 0.0796
+     "count": 4824,
+     "share": 0.0795
     },
     {
      "type": "Abandoned Vehicle",
      "count": 2833,
-     "share": 0.0465
+     "share": 0.0467
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2721,
-     "share": 0.0446
+     "count": 2696,
+     "share": 0.0444
     },
     {
      "type": "Street Condition",
-     "count": 1901,
-     "share": 0.0312
+     "count": 1902,
+     "share": 0.0313
     },
     {
      "type": "Water System",
-     "count": 1800,
-     "share": 0.0295
-    },
-    {
-     "type": "Derelict Vehicles",
-     "count": 1492,
-     "share": 0.0245
+     "count": 1747,
+     "share": 0.0288
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1489,
+     "count": 1483,
      "share": 0.0244
     },
     {
+     "type": "Derelict Vehicles",
+     "count": 1472,
+     "share": 0.0243
+    },
+    {
      "type": "Damaged Tree",
-     "count": 1456,
-     "share": 0.0239
+     "count": 1443,
+     "share": 0.0238
     }
    ],
    "distinctive": [
     {
      "type": "Overgrown Tree/Branches",
-     "count": 1115,
+     "count": 1112,
      "x_citywide": 3.05
     },
     {
      "type": "Root/Sewer/Sidewalk Condition",
-     "count": 446,
-     "x_citywide": 2.83
+     "count": 449,
+     "x_citywide": 2.86
     },
     {
      "type": "Derelict Vehicles",
-     "count": 1492,
-     "x_citywide": 2.72
+     "count": 1472,
+     "x_citywide": 2.7
     }
    ]
   },
@@ -2346,74 +2346,74 @@
    "id": "Manhattan CD1",
    "name": "Financial District & Tribeca",
    "borough": "Manhattan",
-   "total": 35661,
+   "total": 35650,
    "top": [
     {
      "type": "Vendor Enforcement",
-     "count": 7454,
-     "share": 0.209
+     "count": 7394,
+     "share": 0.2074
     },
     {
      "type": "Illegal Parking",
-     "count": 5610,
-     "share": 0.1573
+     "count": 5617,
+     "share": 0.1576
     },
     {
      "type": "Noise",
-     "count": 1768,
-     "share": 0.0496
+     "count": 1764,
+     "share": 0.0495
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 1566,
+     "count": 1564,
      "share": 0.0439
     },
     {
      "type": "Noise - Residential",
-     "count": 1474,
-     "share": 0.0413
+     "count": 1489,
+     "share": 0.0418
     },
     {
      "type": "Street Condition",
-     "count": 1448,
-     "share": 0.0406
+     "count": 1442,
+     "share": 0.0404
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1384,
-     "share": 0.0388
-    },
-    {
-     "type": "Noise - Commercial",
-     "count": 1002,
-     "share": 0.0281
+     "count": 1377,
+     "share": 0.0386
     },
     {
      "type": "Encampment",
-     "count": 1000,
-     "share": 0.028
+     "count": 1013,
+     "share": 0.0284
+    },
+    {
+     "type": "Noise - Commercial",
+     "count": 996,
+     "share": 0.0279
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 827,
-     "share": 0.0232
+     "count": 839,
+     "share": 0.0235
     }
    ],
    "distinctive": [
     {
      "type": "Vendor Enforcement",
-     "count": 7454,
-     "x_citywide": 34.74
+     "count": 7394,
+     "x_citywide": 34.58
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 1566,
-     "x_citywide": 5.06
+     "count": 1564,
+     "x_citywide": 5.04
     },
     {
      "type": "Lost Property",
      "count": 293,
-     "x_citywide": 4.71
+     "x_citywide": 4.73
     }
    ]
   },
@@ -2421,74 +2421,74 @@
    "id": "Manhattan CD2",
    "name": "Greenwich Village & SoHo",
    "borough": "Manhattan",
-   "total": 47661,
+   "total": 47494,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 5060,
-     "share": 0.1062
+     "count": 5071,
+     "share": 0.1068
     },
     {
      "type": "Noise - Commercial",
-     "count": 2825,
-     "share": 0.0593
+     "count": 2786,
+     "share": 0.0587
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2767,
-     "share": 0.0581
-    },
-    {
-     "type": "Noise - Residential",
-     "count": 2691,
-     "share": 0.0565
+     "count": 2679,
+     "share": 0.0564
     },
     {
      "type": "Encampment",
-     "count": 2657,
-     "share": 0.0557
+     "count": 2676,
+     "share": 0.0563
+    },
+    {
+     "type": "Noise - Residential",
+     "count": 2660,
+     "share": 0.056
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2596,
-     "share": 0.0545
+     "count": 2591,
+     "share": 0.0546
     },
     {
      "type": "Noise",
-     "count": 1733,
+     "count": 1730,
      "share": 0.0364
     },
     {
      "type": "Street Condition",
-     "count": 1636,
-     "share": 0.0343
+     "count": 1634,
+     "share": 0.0344
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1475,
-     "share": 0.0309
+     "count": 1447,
+     "share": 0.0305
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 1247,
-     "share": 0.0262
+     "count": 1250,
+     "share": 0.0263
     }
    ],
    "distinctive": [
     {
      "type": "Outdoor Dining",
-     "count": 708,
-     "x_citywide": 18.17
+     "count": 704,
+     "x_citywide": 18.06
     },
     {
      "type": "Lost Property",
-     "count": 734,
-     "x_citywide": 8.84
+     "count": 720,
+     "x_citywide": 8.72
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1475,
-     "x_citywide": 6.45
+     "count": 1447,
+     "x_citywide": 6.34
     }
    ]
   },
@@ -2496,74 +2496,74 @@
    "id": "Manhattan CD3",
    "name": "Lower East Side & Chinatown",
    "borough": "Manhattan",
-   "total": 73349,
+   "total": 73613,
    "top": [
     {
      "type": "Noise - Residential",
-     "count": 9010,
-     "share": 0.1228
+     "count": 8937,
+     "share": 0.1214
     },
     {
      "type": "Illegal Parking",
-     "count": 6074,
-     "share": 0.0828
+     "count": 6069,
+     "share": 0.0824
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 5588,
-     "share": 0.0762
+     "count": 5460,
+     "share": 0.0742
     },
     {
      "type": "Noise - Commercial",
-     "count": 4795,
-     "share": 0.0654
-    },
-    {
-     "type": "Noise - Street/Sidewalk",
-     "count": 4215,
-     "share": 0.0575
+     "count": 4746,
+     "share": 0.0645
     },
     {
      "type": "Traffic",
-     "count": 4022,
-     "share": 0.0548
+     "count": 4412,
+     "share": 0.0599
+    },
+    {
+     "type": "Noise - Street/Sidewalk",
+     "count": 4199,
+     "share": 0.057
     },
     {
      "type": "Encampment",
-     "count": 3896,
-     "share": 0.0531
+     "count": 3881,
+     "share": 0.0527
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2036,
-     "share": 0.0278
+     "count": 2059,
+     "share": 0.028
     },
     {
      "type": "Graffiti",
-     "count": 2028,
-     "share": 0.0276
+     "count": 2023,
+     "share": 0.0275
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1932,
-     "share": 0.0263
+     "count": 1926,
+     "share": 0.0262
     }
    ],
    "distinctive": [
     {
      "type": "Traffic",
-     "count": 4022,
-     "x_citywide": 19.16
+     "count": 4412,
+     "x_citywide": 20.22
     },
     {
      "type": "Outdoor Dining",
-     "count": 530,
-     "x_citywide": 8.84
+     "count": 538,
+     "x_citywide": 8.9
     },
     {
      "type": "Graffiti",
-     "count": 2028,
-     "x_citywide": 6.35
+     "count": 2023,
+     "x_citywide": 6.37
     }
    ]
   },
@@ -2571,74 +2571,74 @@
    "id": "Manhattan CD4",
    "name": "Chelsea & Hell's Kitchen",
    "borough": "Manhattan",
-   "total": 58871,
+   "total": 58505,
    "top": [
     {
      "type": "Encampment",
-     "count": 7205,
-     "share": 0.1224
+     "count": 7170,
+     "share": 0.1226
     },
     {
      "type": "Illegal Parking",
-     "count": 5822,
-     "share": 0.0989
+     "count": 5693,
+     "share": 0.0973
     },
     {
      "type": "Noise - Residential",
-     "count": 4666,
-     "share": 0.0793
+     "count": 4653,
+     "share": 0.0795
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3488,
-     "share": 0.0592
+     "count": 3452,
+     "share": 0.059
     },
     {
      "type": "Noise",
-     "count": 2388,
+     "count": 2378,
      "share": 0.0406
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 2229,
-     "share": 0.0379
+     "count": 2209,
+     "share": 0.0378
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2205,
-     "share": 0.0375
+     "count": 2172,
+     "share": 0.0371
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1924,
-     "share": 0.0327
+     "count": 1931,
+     "share": 0.033
     },
     {
      "type": "Street Condition",
-     "count": 1620,
-     "share": 0.0275
+     "count": 1619,
+     "share": 0.0277
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1605,
-     "share": 0.0273
+     "count": 1606,
+     "share": 0.0275
     }
    ],
    "distinctive": [
     {
      "type": "Encampment",
-     "count": 7205,
+     "count": 7170,
      "x_citywide": 10.24
     },
     {
      "type": "Lost Property",
-     "count": 680,
-     "x_citywide": 6.63
+     "count": 676,
+     "x_citywide": 6.64
     },
     {
      "type": "Taxi Complaint",
-     "count": 986,
-     "x_citywide": 6.35
+     "count": 970,
+     "x_citywide": 6.28
     }
    ]
   },
@@ -2646,74 +2646,74 @@
    "id": "Manhattan CD5",
    "name": "Midtown",
    "borough": "Manhattan",
-   "total": 60712,
+   "total": 60753,
    "top": [
     {
      "type": "Encampment",
-     "count": 8293,
-     "share": 0.1366
+     "count": 8322,
+     "share": 0.137
     },
     {
      "type": "Illegal Parking",
-     "count": 6083,
-     "share": 0.1002
+     "count": 6099,
+     "share": 0.1004
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 5611,
-     "share": 0.0924
+     "count": 5665,
+     "share": 0.0932
     },
     {
      "type": "Vendor Enforcement",
-     "count": 2751,
+     "count": 2754,
      "share": 0.0453
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2271,
+     "count": 2272,
      "share": 0.0374
     },
     {
      "type": "Air Quality",
-     "count": 2151,
-     "share": 0.0354
+     "count": 2176,
+     "share": 0.0358
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 2081,
-     "share": 0.0343
+     "count": 2046,
+     "share": 0.0337
     },
     {
      "type": "Non-Emergency Police Matter",
-     "count": 2042,
-     "share": 0.0336
+     "count": 2038,
+     "share": 0.0335
     },
     {
      "type": "Street Condition",
-     "count": 1932,
-     "share": 0.0318
+     "count": 1939,
+     "share": 0.0319
     },
     {
      "type": "Noise",
-     "count": 1931,
-     "share": 0.0318
+     "count": 1894,
+     "share": 0.0312
     }
    ],
    "distinctive": [
     {
      "type": "Mobile Food Vendor",
-     "count": 629,
-     "x_citywide": 14.86
+     "count": 624,
+     "x_citywide": 14.79
     },
     {
      "type": "Air Quality",
-     "count": 2151,
-     "x_citywide": 14.07
+     "count": 2176,
+     "x_citywide": 14.12
     },
     {
      "type": "Lost Property",
-     "count": 1397,
-     "x_citywide": 13.2
+     "count": 1392,
+     "x_citywide": 13.17
     }
    ]
   },
@@ -2721,74 +2721,74 @@
    "id": "Manhattan CD6",
    "name": "Murray Hill, Gramercy & Stuy Town",
    "borough": "Manhattan",
-   "total": 41685,
+   "total": 41615,
    "top": [
     {
      "type": "Noise - Residential",
      "count": 4821,
-     "share": 0.1157
+     "share": 0.1158
     },
     {
      "type": "Encampment",
-     "count": 3404,
+     "count": 3398,
      "share": 0.0817
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3195,
-     "share": 0.0766
+     "count": 3142,
+     "share": 0.0755
     },
     {
      "type": "Illegal Parking",
-     "count": 2971,
-     "share": 0.0713
+     "count": 2986,
+     "share": 0.0718
     },
     {
      "type": "Noise",
-     "count": 2743,
-     "share": 0.0658
+     "count": 2729,
+     "share": 0.0656
     },
     {
      "type": "Street Condition",
-     "count": 1741,
-     "share": 0.0418
+     "count": 1725,
+     "share": 0.0415
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 1666,
-     "share": 0.04
+     "count": 1652,
+     "share": 0.0397
     },
     {
      "type": "Noise - Helicopter",
-     "count": 1444,
-     "share": 0.0346
+     "count": 1418,
+     "share": 0.0341
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1323,
-     "share": 0.0317
+     "count": 1341,
+     "share": 0.0322
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1023,
-     "share": 0.0245
+     "count": 1036,
+     "share": 0.0249
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Helicopter",
-     "count": 1444,
-     "x_citywide": 12.52
+     "count": 1418,
+     "x_citywide": 12.77
     },
     {
      "type": "Encampment",
-     "count": 3404,
-     "x_citywide": 6.84
+     "count": 3398,
+     "x_citywide": 6.82
     },
     {
      "type": "For Hire Vehicle Complaint",
-     "count": 1323,
-     "x_citywide": 6.62
+     "count": 1341,
+     "x_citywide": 6.71
     }
    ]
   },
@@ -2796,74 +2796,74 @@
    "id": "Manhattan CD7",
    "name": "Upper West Side",
    "borough": "Manhattan",
-   "total": 65949,
+   "total": 65783,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 6871,
+     "count": 6854,
      "share": 0.1042
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 6485,
-     "share": 0.0983
+     "count": 6335,
+     "share": 0.0963
     },
     {
      "type": "Noise - Helicopter",
-     "count": 4849,
-     "share": 0.0735
+     "count": 4784,
+     "share": 0.0727
     },
     {
      "type": "Noise - Residential",
-     "count": 4526,
+     "count": 4511,
      "share": 0.0686
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2738,
-     "share": 0.0415
+     "count": 2777,
+     "share": 0.0422
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2589,
-     "share": 0.0393
+     "count": 2610,
+     "share": 0.0397
     },
     {
      "type": "Noise",
-     "count": 2405,
+     "count": 2400,
      "share": 0.0365
     },
     {
      "type": "Street Condition",
-     "count": 2135,
-     "share": 0.0324
+     "count": 2115,
+     "share": 0.0322
     },
     {
      "type": "Encampment",
-     "count": 2133,
-     "share": 0.0323
+     "count": 2100,
+     "share": 0.0319
     },
     {
      "type": "Homeless Person Assistance",
-     "count": 1849,
-     "share": 0.028
+     "count": 1872,
+     "share": 0.0285
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Helicopter",
-     "count": 4849,
-     "x_citywide": 26.58
+     "count": 4784,
+     "x_citywide": 27.26
     },
     {
      "type": "Illegal Tree Damage",
-     "count": 805,
-     "x_citywide": 6.82
+     "count": 808,
+     "x_citywide": 6.86
     },
     {
      "type": "Lost Property",
-     "count": 441,
-     "x_citywide": 3.84
+     "count": 436,
+     "x_citywide": 3.81
     }
    ]
   },
@@ -2871,74 +2871,74 @@
    "id": "Manhattan CD8",
    "name": "Upper East Side",
    "borough": "Manhattan",
-   "total": 52379,
+   "total": 52370,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 7486,
-     "share": 0.1429
+     "count": 7530,
+     "share": 0.1438
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3979,
-     "share": 0.076
+     "count": 3920,
+     "share": 0.0749
     },
     {
      "type": "Noise - Residential",
-     "count": 3271,
+     "count": 3266,
      "share": 0.0624
     },
     {
      "type": "Noise",
-     "count": 2556,
-     "share": 0.0488
+     "count": 2582,
+     "share": 0.0493
     },
     {
      "type": "Street Condition",
-     "count": 2250,
-     "share": 0.043
+     "count": 2256,
+     "share": 0.0431
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1840,
-     "share": 0.0351
+     "count": 1834,
+     "share": 0.035
     },
     {
      "type": "Vendor Enforcement",
-     "count": 1319,
-     "share": 0.0252
+     "count": 1310,
+     "share": 0.025
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1266,
-     "share": 0.0242
+     "count": 1255,
+     "share": 0.024
     },
     {
      "type": "Noise - Commercial",
-     "count": 1227,
+     "count": 1226,
      "share": 0.0234
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1207,
-     "share": 0.023
+     "count": 1220,
+     "share": 0.0233
     }
    ],
    "distinctive": [
     {
      "type": "Lost Property",
-     "count": 708,
-     "x_citywide": 7.76
+     "count": 718,
+     "x_citywide": 7.88
     },
     {
      "type": "Outdoor Dining",
-     "count": 328,
-     "x_citywide": 7.66
+     "count": 331,
+     "x_citywide": 7.7
     },
     {
      "type": "Food Establishment",
-     "count": 883,
-     "x_citywide": 4.62
+     "count": 879,
+     "x_citywide": 4.59
     }
    ]
   },
@@ -2946,56 +2946,56 @@
    "id": "Manhattan CD9",
    "name": "Morningside & Hamilton Heights",
    "borough": "Manhattan",
-   "total": 58788,
+   "total": 58793,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 11588,
-     "share": 0.1971
+     "count": 11502,
+     "share": 0.1956
     },
     {
      "type": "Noise - Residential",
-     "count": 6191,
-     "share": 0.1053
+     "count": 6144,
+     "share": 0.1045
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 5522,
-     "share": 0.0939
+     "count": 5526,
+     "share": 0.094
     },
     {
      "type": "Illegal Parking",
-     "count": 5346,
-     "share": 0.0909
+     "count": 5332,
+     "share": 0.0907
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3188,
-     "share": 0.0542
+     "count": 3226,
+     "share": 0.0549
     },
     {
      "type": "PLUMBING",
-     "count": 2395,
-     "share": 0.0407
+     "count": 2419,
+     "share": 0.0411
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2239,
-     "share": 0.0381
+     "count": 2256,
+     "share": 0.0384
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 1537,
-     "share": 0.0261
+     "count": 1562,
+     "share": 0.0266
     },
     {
      "type": "WATER LEAK",
-     "count": 1349,
-     "share": 0.0229
+     "count": 1351,
+     "share": 0.023
     },
     {
      "type": "Noise - Commercial",
-     "count": 1284,
+     "count": 1281,
      "share": 0.0218
     }
    ],
@@ -3003,17 +3003,17 @@
     {
      "type": "Illegal Fireworks",
      "count": 398,
-     "x_citywide": 2.47
+     "x_citywide": 2.46
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 11588,
-     "x_citywide": 2.22
+     "count": 11502,
+     "x_citywide": 2.23
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2239,
-     "x_citywide": 2.18
+     "count": 2256,
+     "x_citywide": 2.19
     }
    ]
   },
@@ -3021,74 +3021,74 @@
    "id": "Manhattan CD10",
    "name": "Central Harlem",
    "borough": "Manhattan",
-   "total": 84980,
+   "total": 84763,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 17153,
-     "share": 0.2018
+     "count": 16962,
+     "share": 0.2001
     },
     {
      "type": "Noise - Residential",
-     "count": 10399,
-     "share": 0.1224
+     "count": 10365,
+     "share": 0.1223
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 6060,
-     "share": 0.0713
+     "count": 6049,
+     "share": 0.0714
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 5582,
-     "share": 0.0657
+     "count": 5596,
+     "share": 0.066
     },
     {
      "type": "Illegal Parking",
-     "count": 5498,
-     "share": 0.0647
+     "count": 5454,
+     "share": 0.0643
     },
     {
      "type": "PLUMBING",
-     "count": 3533,
-     "share": 0.0416
+     "count": 3554,
+     "share": 0.0419
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 2670,
-     "share": 0.0314
+     "count": 2680,
+     "share": 0.0316
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2557,
-     "share": 0.0301
+     "count": 2580,
+     "share": 0.0304
     },
     {
      "type": "WATER LEAK",
-     "count": 2037,
+     "count": 2038,
      "share": 0.024
     },
     {
-     "type": "Noise - Commercial",
-     "count": 1905,
-     "share": 0.0224
+     "type": "GENERAL",
+     "count": 1921,
+     "share": 0.0227
     }
    ],
    "distinctive": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 17153,
-     "x_citywide": 2.27
+     "count": 16962,
+     "x_citywide": 2.28
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2557,
-     "x_citywide": 2.19
+     "count": 2580,
+     "x_citywide": 2.2
     },
     {
      "type": "Rodent",
-     "count": 1170,
-     "x_citywide": 2.1
+     "count": 1194,
+     "x_citywide": 2.13
     }
    ]
   },
@@ -3096,74 +3096,74 @@
    "id": "Manhattan CD11",
    "name": "East Harlem",
    "borough": "Manhattan",
-   "total": 55674,
+   "total": 55455,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 7973,
-     "share": 0.1432
+     "count": 7913,
+     "share": 0.1427
     },
     {
      "type": "Noise - Residential",
-     "count": 7252,
-     "share": 0.1303
+     "count": 7150,
+     "share": 0.1289
     },
     {
      "type": "Illegal Parking",
-     "count": 3987,
-     "share": 0.0716
+     "count": 3979,
+     "share": 0.0718
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3865,
-     "share": 0.0694
+     "count": 3863,
+     "share": 0.0697
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 3561,
-     "share": 0.064
+     "count": 3541,
+     "share": 0.0639
     },
     {
      "type": "PLUMBING",
-     "count": 2346,
-     "share": 0.0421
+     "count": 2352,
+     "share": 0.0424
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 1687,
-     "share": 0.0303
+     "count": 1686,
+     "share": 0.0304
     },
     {
      "type": "GENERAL",
-     "count": 1400,
-     "share": 0.0251
-    },
-    {
-     "type": "DOOR/WINDOW",
-     "count": 1363,
-     "share": 0.0245
+     "count": 1398,
+     "share": 0.0252
     },
     {
      "type": "Noise",
-     "count": 1348,
-     "share": 0.0242
+     "count": 1360,
+     "share": 0.0245
+    },
+    {
+     "type": "DOOR/WINDOW",
+     "count": 1349,
+     "share": 0.0243
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Park",
-     "count": 614,
-     "x_citywide": 5.32
+     "count": 581,
+     "x_citywide": 5.09
     },
     {
      "type": "GENERAL",
-     "count": 1400,
-     "x_citywide": 2.21
+     "count": 1398,
+     "x_citywide": 2.2
     },
     {
      "type": "PLUMBING",
-     "count": 2346,
-     "x_citywide": 1.96
+     "count": 2352,
+     "x_citywide": 1.97
     }
    ]
   },
@@ -3171,74 +3171,74 @@
    "id": "Manhattan CD12",
    "name": "Washington Heights & Inwood",
    "borough": "Manhattan",
-   "total": 117851,
+   "total": 117233,
    "top": [
     {
      "type": "HEAT/HOT WATER",
-     "count": 20915,
-     "share": 0.1775
+     "count": 20448,
+     "share": 0.1744
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 17118,
-     "share": 0.1453
+     "count": 17045,
+     "share": 0.1454
     },
     {
      "type": "Noise - Residential",
-     "count": 10769,
-     "share": 0.0914
+     "count": 10728,
+     "share": 0.0915
     },
     {
      "type": "Illegal Parking",
-     "count": 10524,
-     "share": 0.0893
+     "count": 10415,
+     "share": 0.0888
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 5998,
-     "share": 0.0509
+     "count": 6033,
+     "share": 0.0515
     },
     {
      "type": "PAINT/PLASTER",
-     "count": 4206,
-     "share": 0.0357
+     "count": 4196,
+     "share": 0.0358
     },
     {
      "type": "PLUMBING",
-     "count": 4182,
-     "share": 0.0355
+     "count": 4195,
+     "share": 0.0358
     },
     {
      "type": "DOOR/WINDOW",
-     "count": 2925,
-     "share": 0.0248
+     "count": 2923,
+     "share": 0.0249
     },
     {
      "type": "Noise - Vehicle",
-     "count": 2577,
-     "share": 0.0219
+     "count": 2559,
+     "share": 0.0218
     },
     {
      "type": "Noise - Commercial",
-     "count": 2476,
-     "share": 0.021
+     "count": 2485,
+     "share": 0.0212
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 17118,
-     "x_citywide": 3.29
+     "count": 17045,
+     "x_citywide": 3.3
     },
     {
      "type": "FLOORING/STAIRS",
-     "count": 2210,
+     "count": 2212,
      "x_citywide": 2.38
     },
     {
      "type": "Drug Activity",
-     "count": 610,
-     "x_citywide": 2.31
+     "count": 612,
+     "x_citywide": 2.33
     }
    ]
   },
@@ -3246,74 +3246,74 @@
    "id": "Queens CD1",
    "name": "Astoria & Long Island City",
    "borough": "Queens",
-   "total": 100203,
+   "total": 100250,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 24864,
-     "share": 0.2481
+     "count": 24883,
+     "share": 0.2482
     },
     {
      "type": "Noise - Residential",
-     "count": 8728,
-     "share": 0.0871
+     "count": 8716,
+     "share": 0.0869
     },
     {
      "type": "Blocked Driveway",
-     "count": 7660,
-     "share": 0.0764
+     "count": 7674,
+     "share": 0.0765
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4924,
-     "share": 0.0491
+     "count": 4824,
+     "share": 0.0481
     },
     {
      "type": "GENERAL",
-     "count": 3696,
-     "share": 0.0369
+     "count": 3774,
+     "share": 0.0376
     },
     {
      "type": "Street Condition",
-     "count": 3582,
+     "count": 3575,
      "share": 0.0357
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3101,
-     "share": 0.0309
-    },
-    {
-     "type": "Noise - Commercial",
-     "count": 2351,
-     "share": 0.0235
+     "count": 3115,
+     "share": 0.0311
     },
     {
      "type": "Dirty Condition",
-     "count": 2333,
-     "share": 0.0233
+     "count": 2377,
+     "share": 0.0237
+    },
+    {
+     "type": "Noise - Commercial",
+     "count": 2327,
+     "share": 0.0232
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2236,
-     "share": 0.0223
+     "count": 2242,
+     "share": 0.0224
     }
    ],
    "distinctive": [
     {
      "type": "Illegal Tree Damage",
-     "count": 629,
+     "count": 631,
      "x_citywide": 3.51
     },
     {
      "type": "GENERAL",
-     "count": 3696,
-     "x_citywide": 3.24
+     "count": 3774,
+     "x_citywide": 3.29
     },
     {
      "type": "Rodent",
-     "count": 1287,
-     "x_citywide": 1.96
+     "count": 1289,
+     "x_citywide": 1.94
     }
    ]
   },
@@ -3321,52 +3321,52 @@
    "id": "Queens CD2",
    "name": "Sunnyside & Woodside",
    "borough": "Queens",
-   "total": 66905,
+   "total": 66807,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 22856,
-     "share": 0.3416
+     "count": 22767,
+     "share": 0.3408
     },
     {
      "type": "Blocked Driveway",
-     "count": 4024,
-     "share": 0.0601
+     "count": 4027,
+     "share": 0.0603
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3982,
-     "share": 0.0595
+     "count": 3923,
+     "share": 0.0587
     },
     {
      "type": "Noise - Residential",
-     "count": 3718,
-     "share": 0.0556
+     "count": 3723,
+     "share": 0.0557
     },
     {
      "type": "Street Condition",
-     "count": 3359,
-     "share": 0.0502
+     "count": 3333,
+     "share": 0.0499
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1616,
-     "share": 0.0242
+     "count": 1611,
+     "share": 0.0241
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1482,
+     "count": 1485,
      "share": 0.0222
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1305,
+     "count": 1304,
      "share": 0.0195
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1210,
-     "share": 0.0181
+     "count": 1222,
+     "share": 0.0183
     },
     {
      "type": "Snow or Ice",
@@ -3377,18 +3377,18 @@
    "distinctive": [
     {
      "type": "Illegal Parking",
-     "count": 22856,
-     "x_citywide": 2.19
+     "count": 22767,
+     "x_citywide": 2.18
     },
     {
      "type": "Smoking or Vaping",
-     "count": 277,
-     "x_citywide": 2.0
+     "count": 280,
+     "x_citywide": 2.02
     },
     {
      "type": "Indoor Air Quality",
-     "count": 323,
-     "x_citywide": 1.77
+     "count": 337,
+     "x_citywide": 1.83
     }
    ]
   },
@@ -3396,42 +3396,42 @@
    "id": "Queens CD3",
    "name": "Jackson Heights & East Elmhurst",
    "borough": "Queens",
-   "total": 65551,
+   "total": 65562,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 13224,
-     "share": 0.2017
+     "count": 13238,
+     "share": 0.2019
     },
     {
      "type": "Blocked Driveway",
-     "count": 7665,
-     "share": 0.1169
+     "count": 7695,
+     "share": 0.1174
     },
     {
      "type": "Noise - Residential",
-     "count": 4840,
-     "share": 0.0738
+     "count": 4858,
+     "share": 0.0741
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4752,
-     "share": 0.0725
+     "count": 4699,
+     "share": 0.0717
     },
     {
      "type": "Noise - Vehicle",
-     "count": 3129,
-     "share": 0.0477
+     "count": 3138,
+     "share": 0.0479
     },
     {
      "type": "Street Condition",
-     "count": 2630,
-     "share": 0.0401
+     "count": 2623,
+     "share": 0.04
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2371,
-     "share": 0.0362
+     "count": 2366,
+     "share": 0.0361
     },
     {
      "type": "UNSANITARY CONDITION",
@@ -3440,29 +3440,29 @@
     },
     {
      "type": "Vendor Enforcement",
-     "count": 1429,
-     "share": 0.0218
+     "count": 1425,
+     "share": 0.0217
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1134,
-     "share": 0.0173
+     "count": 1129,
+     "share": 0.0172
     }
    ],
    "distinctive": [
     {
      "type": "Noise - Park",
-     "count": 545,
-     "x_citywide": 4.01
+     "count": 566,
+     "x_citywide": 4.19
     },
     {
      "type": "Vendor Enforcement",
-     "count": 1429,
+     "count": 1425,
      "x_citywide": 3.62
     },
     {
      "type": "Noise - Vehicle",
-     "count": 3129,
+     "count": 3138,
      "x_citywide": 3.61
     }
    ]
@@ -3471,74 +3471,74 @@
    "id": "Queens CD4",
    "name": "Elmhurst & Corona",
    "borough": "Queens",
-   "total": 50511,
+   "total": 49692,
    "top": [
     {
      "type": "Blocked Driveway",
-     "count": 7458,
-     "share": 0.1477
+     "count": 7430,
+     "share": 0.1495
     },
     {
      "type": "Illegal Parking",
-     "count": 6696,
-     "share": 0.1326
+     "count": 6644,
+     "share": 0.1337
     },
     {
      "type": "Noise - Residential",
-     "count": 5999,
-     "share": 0.1188
+     "count": 5980,
+     "share": 0.1203
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4270,
-     "share": 0.0845
+     "count": 4191,
+     "share": 0.0843
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3279,
-     "share": 0.0649
+     "count": 2635,
+     "share": 0.053
     },
     {
      "type": "Street Condition",
-     "count": 1921,
-     "share": 0.038
+     "count": 1917,
+     "share": 0.0386
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1548,
-     "share": 0.0306
+     "count": 1569,
+     "share": 0.0316
     },
     {
      "type": "Water System",
-     "count": 981,
-     "share": 0.0194
+     "count": 974,
+     "share": 0.0196
     },
     {
      "type": "PLUMBING",
-     "count": 821,
-     "share": 0.0163
+     "count": 816,
+     "share": 0.0164
     },
     {
-     "type": "Drug Activity",
-     "count": 685,
-     "share": 0.0136
+     "type": "Noise - Commercial",
+     "count": 687,
+     "share": 0.0138
     }
    ],
    "distinctive": [
     {
      "type": "Drug Activity",
-     "count": 685,
-     "x_citywide": 6.05
+     "count": 672,
+     "x_citywide": 6.03
     },
     {
      "type": "Blocked Driveway",
-     "count": 7458,
-     "x_citywide": 2.99
+     "count": 7430,
+     "x_citywide": 3.02
     },
     {
-     "type": "Panhandling",
-     "count": 259,
-     "x_citywide": 1.75
+     "type": "Sewer Maintenance",
+     "count": 270,
+     "x_citywide": 1.69
     }
    ]
   },
@@ -3546,74 +3546,74 @@
    "id": "Queens CD5",
    "name": "Ridgewood, Maspeth & Middle Village",
    "borough": "Queens",
-   "total": 83740,
+   "total": 83547,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 24243,
-     "share": 0.2895
+     "count": 24176,
+     "share": 0.2894
     },
     {
      "type": "Blocked Driveway",
-     "count": 8390,
-     "share": 0.1002
+     "count": 8363,
+     "share": 0.1001
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 4765,
-     "share": 0.0569
+     "count": 4793,
+     "share": 0.0574
     },
     {
      "type": "Noise - Residential",
-     "count": 4481,
-     "share": 0.0535
+     "count": 4456,
+     "share": 0.0533
     },
     {
      "type": "Street Condition",
-     "count": 3821,
+     "count": 3812,
      "share": 0.0456
     },
     {
      "type": "Snow or Ice",
      "count": 1936,
-     "share": 0.0231
+     "share": 0.0232
     },
     {
      "type": "Noise - Commercial",
-     "count": 1893,
-     "share": 0.0226
+     "count": 1863,
+     "share": 0.0223
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 1840,
+     "count": 1837,
      "share": 0.022
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1699,
-     "share": 0.0203
+     "count": 1691,
+     "share": 0.0202
     },
     {
      "type": "Water System",
-     "count": 1694,
-     "share": 0.0202
+     "count": 1667,
+     "share": 0.02
     }
    ],
    "distinctive": [
     {
      "type": "Abandoned Vehicle",
-     "count": 4765,
-     "x_citywide": 3.12
+     "count": 4793,
+     "x_citywide": 3.13
     },
     {
      "type": "Illegal Posting",
-     "count": 251,
+     "count": 255,
      "x_citywide": 2.18
     },
     {
      "type": "Blocked Driveway",
-     "count": 8390,
-     "x_citywide": 2.03
+     "count": 8363,
+     "x_citywide": 2.02
     }
    ]
   },
@@ -3621,42 +3621,42 @@
    "id": "Queens CD6",
    "name": "Forest Hills & Rego Park",
    "borough": "Queens",
-   "total": 40918,
+   "total": 40814,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 6610,
-     "share": 0.1615
+     "count": 6617,
+     "share": 0.1621
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4070,
-     "share": 0.0995
+     "count": 4031,
+     "share": 0.0988
     },
     {
      "type": "Noise - Residential",
-     "count": 3436,
-     "share": 0.084
+     "count": 3448,
+     "share": 0.0845
     },
     {
      "type": "Blocked Driveway",
-     "count": 2387,
-     "share": 0.0583
+     "count": 2404,
+     "share": 0.0589
     },
     {
      "type": "Street Condition",
-     "count": 2308,
-     "share": 0.0564
+     "count": 2310,
+     "share": 0.0566
     },
     {
      "type": "Non-Emergency Police Matter",
-     "count": 1746,
-     "share": 0.0427
+     "count": 1722,
+     "share": 0.0422
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1140,
-     "share": 0.0279
+     "count": 1143,
+     "share": 0.028
     },
     {
      "type": "Snow or Ice",
@@ -3665,30 +3665,30 @@
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 857,
-     "share": 0.0209
+     "count": 858,
+     "share": 0.021
     },
     {
      "type": "Water System",
-     "count": 798,
-     "share": 0.0195
+     "count": 784,
+     "share": 0.0192
     }
    ],
    "distinctive": [
     {
      "type": "Non-Emergency Police Matter",
-     "count": 1746,
-     "x_citywide": 7.02
+     "count": 1722,
+     "x_citywide": 6.97
     },
     {
      "type": "Indoor Air Quality",
-     "count": 229,
-     "x_citywide": 2.05
+     "count": 233,
+     "x_citywide": 2.07
     },
     {
-     "type": "Lead",
-     "count": 300,
-     "x_citywide": 1.99
+     "type": "Food Establishment",
+     "count": 286,
+     "x_citywide": 1.92
     }
    ]
   },
@@ -3696,74 +3696,74 @@
    "id": "Queens CD7",
    "name": "Flushing & Whitestone",
    "borough": "Queens",
-   "total": 87670,
+   "total": 87376,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 17010,
-     "share": 0.194
+     "count": 16907,
+     "share": 0.1935
     },
     {
      "type": "Blocked Driveway",
-     "count": 8900,
-     "share": 0.1015
+     "count": 8895,
+     "share": 0.1018
     },
     {
      "type": "Noise - Residential",
-     "count": 7835,
+     "count": 7813,
      "share": 0.0894
     },
     {
      "type": "Street Condition",
-     "count": 4457,
-     "share": 0.0508
+     "count": 4466,
+     "share": 0.0511
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 4233,
-     "share": 0.0483
+     "count": 4110,
+     "share": 0.047
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 3418,
-     "share": 0.039
+     "count": 3382,
+     "share": 0.0387
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 3057,
-     "share": 0.0349
+     "count": 3140,
+     "share": 0.0359
     },
     {
      "type": "Dirty Condition",
-     "count": 2081,
-     "share": 0.0237
-    },
-    {
-     "type": "Damaged Tree",
-     "count": 1762,
-     "share": 0.0201
+     "count": 2082,
+     "share": 0.0238
     },
     {
      "type": "Building/Use",
-     "count": 1726,
+     "count": 1722,
      "share": 0.0197
+    },
+    {
+     "type": "Damaged Tree",
+     "count": 1715,
+     "share": 0.0196
     }
    ],
    "distinctive": [
     {
      "type": "Illegal Posting",
-     "count": 801,
-     "x_citywide": 6.65
+     "count": 811,
+     "x_citywide": 6.64
     },
     {
      "type": "Curb Condition",
-     "count": 973,
-     "x_citywide": 4.97
+     "count": 948,
+     "x_citywide": 4.88
     },
     {
      "type": "Building/Use",
-     "count": 1726,
-     "x_citywide": 3.08
+     "count": 1722,
+     "x_citywide": 3.07
     }
    ]
   },
@@ -3771,74 +3771,74 @@
    "id": "Queens CD8",
    "name": "Fresh Meadows & Briarwood",
    "borough": "Queens",
-   "total": 74415,
+   "total": 74098,
    "top": [
     {
      "type": "Noise - Vehicle",
-     "count": 11015,
-     "share": 0.148
+     "count": 10931,
+     "share": 0.1475
     },
     {
      "type": "Illegal Parking",
-     "count": 9634,
-     "share": 0.1295
+     "count": 9575,
+     "share": 0.1292
     },
     {
      "type": "Noise - Residential",
-     "count": 7236,
-     "share": 0.0972
+     "count": 7234,
+     "share": 0.0976
     },
     {
      "type": "Street Condition",
-     "count": 3902,
-     "share": 0.0524
+     "count": 3929,
+     "share": 0.053
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 3530,
-     "share": 0.0474
+     "count": 3482,
+     "share": 0.047
     },
     {
      "type": "Blocked Driveway",
-     "count": 3300,
-     "share": 0.0443
+     "count": 3276,
+     "share": 0.0442
     },
     {
      "type": "Drug Activity",
-     "count": 2368,
-     "share": 0.0318
+     "count": 2314,
+     "share": 0.0312
     },
     {
      "type": "Noise - House of Worship",
-     "count": 1685,
-     "share": 0.0226
-    },
-    {
-     "type": "Traffic",
-     "count": 1681,
+     "count": 1676,
      "share": 0.0226
     },
     {
      "type": "Noise",
-     "count": 1635,
-     "share": 0.022
+     "count": 1648,
+     "share": 0.0222
+    },
+    {
+     "type": "Traffic",
+     "count": 1640,
+     "share": 0.0221
     }
    ],
    "distinctive": [
     {
      "type": "Noise - House of Worship",
-     "count": 1685,
-     "x_citywide": 33.72
+     "count": 1676,
+     "x_citywide": 33.53
     },
     {
      "type": "Drug Activity",
-     "count": 2368,
-     "x_citywide": 14.19
+     "count": 2314,
+     "x_citywide": 13.92
     },
     {
      "type": "Noise - Vehicle",
-     "count": 11015,
-     "x_citywide": 11.19
+     "count": 10931,
+     "x_citywide": 11.12
     }
    ]
   },
@@ -3846,74 +3846,74 @@
    "id": "Queens CD9",
    "name": "Kew Gardens, Woodhaven & Richmond Hill",
    "borough": "Queens",
-   "total": 68180,
+   "total": 68071,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 18047,
-     "share": 0.2647
+     "count": 18024,
+     "share": 0.2648
     },
     {
      "type": "Blocked Driveway",
-     "count": 9080,
-     "share": 0.1332
+     "count": 9073,
+     "share": 0.1333
     },
     {
      "type": "Noise - Residential",
-     "count": 6413,
-     "share": 0.0941
+     "count": 6376,
+     "share": 0.0937
     },
     {
      "type": "Street Condition",
-     "count": 3033,
-     "share": 0.0445
+     "count": 3034,
+     "share": 0.0446
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 2725,
-     "share": 0.04
+     "count": 2731,
+     "share": 0.0401
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2508,
-     "share": 0.0368
+     "count": 2453,
+     "share": 0.036
     },
     {
      "type": "Derelict Vehicles",
-     "count": 1208,
+     "count": 1205,
      "share": 0.0177
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1187,
+     "count": 1184,
      "share": 0.0174
     },
     {
      "type": "Traffic Signal Condition",
-     "count": 1159,
-     "share": 0.017
+     "count": 1162,
+     "share": 0.0171
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1148,
-     "share": 0.0168
+     "count": 1156,
+     "share": 0.017
     }
    ],
    "distinctive": [
     {
      "type": "Blocked Driveway",
-     "count": 9080,
+     "count": 9073,
      "x_citywide": 2.69
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 2725,
+     "count": 2731,
      "x_citywide": 2.19
     },
     {
      "type": "Sewer",
-     "count": 796,
-     "x_citywide": 2.07
+     "count": 777,
+     "x_citywide": 2.08
     }
    ]
   },
@@ -3921,74 +3921,74 @@
    "id": "Queens CD10",
    "name": "Howard Beach & Ozone Park",
    "borough": "Queens",
-   "total": 69619,
+   "total": 69251,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 13832,
-     "share": 0.1987
+     "count": 13798,
+     "share": 0.1992
     },
     {
      "type": "Blocked Driveway",
-     "count": 7541,
-     "share": 0.1083
+     "count": 7526,
+     "share": 0.1087
     },
     {
      "type": "Noise - Residential",
-     "count": 7011,
-     "share": 0.1007
+     "count": 7015,
+     "share": 0.1013
     },
     {
      "type": "Building/Use",
-     "count": 4636,
-     "share": 0.0666
+     "count": 4660,
+     "share": 0.0673
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 4006,
-     "share": 0.0575
+     "count": 4022,
+     "share": 0.0581
     },
     {
      "type": "Street Condition",
-     "count": 3501,
-     "share": 0.0503
+     "count": 3476,
+     "share": 0.0502
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 2067,
-     "share": 0.0297
+     "count": 2063,
+     "share": 0.0298
     },
     {
      "type": "General Construction/Plumbing",
-     "count": 1603,
-     "share": 0.023
+     "count": 1610,
+     "share": 0.0232
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 1311,
-     "share": 0.0188
+     "count": 1269,
+     "share": 0.0183
     },
     {
      "type": "Noise - Vehicle",
-     "count": 1246,
-     "share": 0.0179
+     "count": 1255,
+     "share": 0.0181
     }
    ],
    "distinctive": [
     {
      "type": "Building/Use",
-     "count": 4636,
-     "x_citywide": 10.43
-    },
-    {
-     "type": "Noise - Helicopter",
-     "count": 619,
-     "x_citywide": 3.21
+     "count": 4660,
+     "x_citywide": 10.49
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 4006,
-     "x_citywide": 3.15
+     "count": 4022,
+     "x_citywide": 3.17
+    },
+    {
+     "type": "Obstruction",
+     "count": 1058,
+     "x_citywide": 2.74
     }
    ]
   },
@@ -3996,74 +3996,74 @@
    "id": "Queens CD11",
    "name": "Bayside & Little Neck",
    "borough": "Queens",
-   "total": 36537,
+   "total": 36429,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 7764,
-     "share": 0.2125
+     "count": 7758,
+     "share": 0.213
     },
     {
      "type": "Street Condition",
-     "count": 3909,
-     "share": 0.107
+     "count": 3910,
+     "share": 0.1073
     },
     {
      "type": "Noise - Residential",
-     "count": 1751,
-     "share": 0.0479
-    },
-    {
-     "type": "Damaged Tree",
-     "count": 1721,
-     "share": 0.0471
+     "count": 1741,
+     "share": 0.0478
     },
     {
      "type": "Blocked Driveway",
-     "count": 1714,
-     "share": 0.0469
+     "count": 1704,
+     "share": 0.0468
+    },
+    {
+     "type": "Damaged Tree",
+     "count": 1694,
+     "share": 0.0465
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1663,
-     "share": 0.0455
+     "count": 1651,
+     "share": 0.0453
     },
     {
      "type": "Water System",
-     "count": 1237,
-     "share": 0.0339
+     "count": 1232,
+     "share": 0.0338
     },
     {
      "type": "Snow or Ice",
      "count": 1026,
-     "share": 0.0281
+     "share": 0.0282
     },
     {
      "type": "Overgrown Tree/Branches",
-     "count": 973,
-     "share": 0.0266
+     "count": 962,
+     "share": 0.0264
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 769,
-     "share": 0.021
+     "count": 745,
+     "share": 0.0205
     }
    ],
    "distinctive": [
     {
      "type": "Dead/Dying Tree",
-     "count": 533,
-     "x_citywide": 5.06
+     "count": 526,
+     "x_citywide": 5.01
     },
     {
      "type": "Root/Sewer/Sidewalk Condition",
-     "count": 429,
-     "x_citywide": 4.54
+     "count": 420,
+     "x_citywide": 4.46
     },
     {
      "type": "Overgrown Tree/Branches",
-     "count": 973,
-     "x_citywide": 4.44
+     "count": 962,
+     "x_citywide": 4.4
     }
    ]
   },
@@ -4071,74 +4071,74 @@
    "id": "Queens CD12",
    "name": "Jamaica & Hollis",
    "borough": "Queens",
-   "total": 97902,
+   "total": 97679,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 11227,
-     "share": 0.1147
+     "count": 11231,
+     "share": 0.115
     },
     {
      "type": "Blocked Driveway",
-     "count": 8844,
-     "share": 0.0903
+     "count": 8803,
+     "share": 0.0901
     },
     {
      "type": "Noise - Residential",
-     "count": 8440,
+     "count": 8420,
      "share": 0.0862
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 6065,
-     "share": 0.0619
+     "count": 5935,
+     "share": 0.0608
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 5472,
-     "share": 0.0559
+     "count": 5393,
+     "share": 0.0552
     },
     {
      "type": "Street Condition",
-     "count": 4844,
-     "share": 0.0495
+     "count": 4858,
+     "share": 0.0497
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 4153,
-     "share": 0.0424
+     "count": 4161,
+     "share": 0.0426
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2956,
-     "share": 0.0302
+     "count": 2958,
+     "share": 0.0303
     },
     {
      "type": "Derelict Vehicles",
-     "count": 2416,
-     "share": 0.0247
+     "count": 2399,
+     "share": 0.0246
     },
     {
      "type": "Water System",
-     "count": 2148,
-     "share": 0.0219
+     "count": 2111,
+     "share": 0.0216
     }
    ],
    "distinctive": [
     {
-     "type": "Mobile Food Vendor",
-     "count": 207,
-     "x_citywide": 3.03
-    },
-    {
      "type": "Obstruction",
-     "count": 1534,
-     "x_citywide": 2.82
+     "count": 1547,
+     "x_citywide": 2.84
     },
     {
      "type": "Derelict Vehicles",
-     "count": 2416,
+     "count": 2399,
      "x_citywide": 2.74
+    },
+    {
+     "type": "Sewer",
+     "count": 1418,
+     "x_citywide": 2.64
     }
    ]
   },
@@ -4146,74 +4146,74 @@
    "id": "Queens CD13",
    "name": "Queens Village & Rosedale",
    "borough": "Queens",
-   "total": 59195,
+   "total": 59065,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 8278,
-     "share": 0.1398
+     "count": 8262,
+     "share": 0.1399
     },
     {
      "type": "Street Condition",
-     "count": 5299,
-     "share": 0.0895
+     "count": 5346,
+     "share": 0.0905
     },
     {
      "type": "Noise - Residential",
-     "count": 4899,
-     "share": 0.0828
+     "count": 4904,
+     "share": 0.083
     },
     {
      "type": "Blocked Driveway",
-     "count": 3478,
-     "share": 0.0588
+     "count": 3477,
+     "share": 0.0589
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 3150,
-     "share": 0.0532
+     "count": 3133,
+     "share": 0.053
     },
     {
      "type": "Damaged Tree",
-     "count": 2345,
-     "share": 0.0396
+     "count": 2282,
+     "share": 0.0386
     },
     {
      "type": "Water System",
-     "count": 1885,
-     "share": 0.0318
-    },
-    {
-     "type": "HEAT/HOT WATER",
-     "count": 1419,
-     "share": 0.024
+     "count": 1843,
+     "share": 0.0312
     },
     {
      "type": "Overgrown Tree/Branches",
-     "count": 1419,
-     "share": 0.024
+     "count": 1413,
+     "share": 0.0239
     },
     {
      "type": "Derelict Vehicles",
-     "count": 1406,
-     "share": 0.0238
+     "count": 1402,
+     "share": 0.0237
+    },
+    {
+     "type": "HEAT/HOT WATER",
+     "count": 1382,
+     "share": 0.0234
     }
    ],
    "distinctive": [
     {
      "type": "Root/Sewer/Sidewalk Condition",
-     "count": 699,
-     "x_citywide": 4.56
+     "count": 692,
+     "x_citywide": 4.53
     },
     {
      "type": "Sewer",
-     "count": 1364,
-     "x_citywide": 4.08
+     "count": 1328,
+     "x_citywide": 4.09
     },
     {
      "type": "Overgrown Tree/Branches",
-     "count": 1419,
-     "x_citywide": 4.0
+     "count": 1413,
+     "x_citywide": 3.99
     }
    ]
   },
@@ -4221,42 +4221,42 @@
    "id": "Queens CD14",
    "name": "The Rockaways",
    "borough": "Queens",
-   "total": 42139,
+   "total": 42047,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 6516,
-     "share": 0.1546
+     "count": 6521,
+     "share": 0.1551
     },
     {
      "type": "Noise - Residential",
-     "count": 4739,
-     "share": 0.1125
+     "count": 4708,
+     "share": 0.112
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2845,
-     "share": 0.0675
+     "count": 2805,
+     "share": 0.0667
     },
     {
      "type": "Street Condition",
-     "count": 2119,
-     "share": 0.0503
+     "count": 2129,
+     "share": 0.0506
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 1885,
-     "share": 0.0447
+     "count": 1877,
+     "share": 0.0446
     },
     {
      "type": "Blocked Driveway",
-     "count": 1776,
-     "share": 0.0421
+     "count": 1783,
+     "share": 0.0424
     },
     {
      "type": "Noise - Street/Sidewalk",
-     "count": 1650,
-     "share": 0.0392
+     "count": 1641,
+     "share": 0.039
     },
     {
      "type": "Snow or Ice",
@@ -4265,30 +4265,30 @@
     },
     {
      "type": "PLUMBING",
-     "count": 1177,
-     "share": 0.0279
+     "count": 1176,
+     "share": 0.028
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 896,
-     "share": 0.0213
+     "count": 886,
+     "share": 0.0211
     }
    ],
    "distinctive": [
     {
      "type": "Urinating in Public",
-     "count": 230,
-     "x_citywide": 12.69
+     "count": 229,
+     "x_citywide": 12.59
     },
     {
      "type": "Sewer",
-     "count": 486,
+     "count": 472,
      "x_citywide": 2.04
     },
     {
      "type": "Sewer Maintenance",
-     "count": 245,
-     "x_citywide": 1.88
+     "count": 252,
+     "x_citywide": 1.86
     }
    ]
   },
@@ -4296,74 +4296,74 @@
    "id": "Staten Island CD1",
    "name": "North Shore (St. George)",
    "borough": "Staten Island",
-   "total": 67081,
+   "total": 67000,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 6640,
-     "share": 0.099
+     "count": 6618,
+     "share": 0.0988
     },
     {
      "type": "Snow or Ice",
      "count": 6316,
-     "share": 0.0942
+     "share": 0.0943
     },
     {
      "type": "Noise - Residential",
-     "count": 5854,
-     "share": 0.0873
+     "count": 5856,
+     "share": 0.0874
     },
     {
      "type": "Blocked Driveway",
-     "count": 3043,
-     "share": 0.0454
+     "count": 3058,
+     "share": 0.0456
     },
     {
      "type": "Missed Collection",
-     "count": 2729,
+     "count": 2730,
      "share": 0.0407
     },
     {
      "type": "HEAT/HOT WATER",
-     "count": 2673,
-     "share": 0.0398
+     "count": 2663,
+     "share": 0.0397
     },
     {
      "type": "Street Condition",
-     "count": 2612,
-     "share": 0.0389
+     "count": 2623,
+     "share": 0.0391
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 2511,
-     "share": 0.0374
+     "count": 2520,
+     "share": 0.0376
     },
     {
      "type": "Street Light Condition",
-     "count": 2272,
-     "share": 0.0339
+     "count": 2278,
+     "share": 0.034
     },
     {
      "type": "UNSANITARY CONDITION",
-     "count": 2074,
-     "share": 0.0309
+     "count": 2066,
+     "share": 0.0308
     }
    ],
    "distinctive": [
     {
      "type": "Snow or Ice",
      "count": 6316,
-     "x_citywide": 5.84
+     "x_citywide": 5.83
     },
     {
      "type": "Missed Collection",
-     "count": 2729,
+     "count": 2730,
      "x_citywide": 4.53
     },
     {
      "type": "Street Light Condition",
-     "count": 2272,
-     "x_citywide": 3.42
+     "count": 2278,
+     "x_citywide": 3.4
     }
    ]
   },
@@ -4371,12 +4371,12 @@
    "id": "Staten Island CD2",
    "name": "Mid-Island",
    "borough": "Staten Island",
-   "total": 43347,
+   "total": 43359,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 5471,
-     "share": 0.1262
+     "count": 5456,
+     "share": 0.1258
     },
     {
      "type": "Snow or Ice",
@@ -4385,60 +4385,60 @@
     },
     {
      "type": "Street Condition",
-     "count": 3352,
-     "share": 0.0773
+     "count": 3371,
+     "share": 0.0777
     },
     {
      "type": "Noise - Residential",
-     "count": 3157,
-     "share": 0.0728
-    },
-    {
-     "type": "Blocked Driveway",
-     "count": 1832,
-     "share": 0.0423
+     "count": 3162,
+     "share": 0.0729
     },
     {
      "type": "Street Light Condition",
-     "count": 1804,
-     "share": 0.0416
+     "count": 1835,
+     "share": 0.0423
+    },
+    {
+     "type": "Blocked Driveway",
+     "count": 1823,
+     "share": 0.042
     },
     {
      "type": "Water System",
-     "count": 1552,
-     "share": 0.0358
+     "count": 1525,
+     "share": 0.0352
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1516,
-     "share": 0.035
+     "count": 1515,
+     "share": 0.0349
     },
     {
      "type": "Damaged Tree",
-     "count": 1416,
-     "share": 0.0327
+     "count": 1406,
+     "share": 0.0324
     },
     {
      "type": "Missed Collection",
-     "count": 1138,
-     "share": 0.0263
+     "count": 1136,
+     "share": 0.0262
     }
    ],
    "distinctive": [
     {
      "type": "Snow or Ice",
      "count": 3953,
-     "x_citywide": 5.66
+     "x_citywide": 5.64
     },
     {
      "type": "Street Light Condition",
-     "count": 1804,
-     "x_citywide": 4.2
+     "count": 1835,
+     "x_citywide": 4.23
     },
     {
      "type": "Root/Sewer/Sidewalk Condition",
-     "count": 451,
-     "x_citywide": 4.02
+     "count": 447,
+     "x_citywide": 3.99
     }
    ]
   },
@@ -4446,74 +4446,74 @@
    "id": "Staten Island CD3",
    "name": "South Shore",
    "borough": "Staten Island",
-   "total": 49493,
+   "total": 49418,
    "top": [
     {
      "type": "Illegal Parking",
-     "count": 5753,
-     "share": 0.1162
+     "count": 5765,
+     "share": 0.1167
     },
     {
      "type": "Snow or Ice",
      "count": 4673,
-     "share": 0.0944
+     "share": 0.0946
     },
     {
      "type": "Street Condition",
-     "count": 4070,
-     "share": 0.0822
+     "count": 4051,
+     "share": 0.082
     },
     {
      "type": "Damaged Tree",
-     "count": 2703,
-     "share": 0.0546
+     "count": 2673,
+     "share": 0.0541
     },
     {
      "type": "Noise - Residential",
-     "count": 2360,
-     "share": 0.0477
-    },
-    {
-     "type": "Water System",
-     "count": 1732,
-     "share": 0.035
+     "count": 2344,
+     "share": 0.0474
     },
     {
      "type": "Street Light Condition",
-     "count": 1717,
-     "share": 0.0347
+     "count": 1730,
+     "share": 0.035
+    },
+    {
+     "type": "Water System",
+     "count": 1679,
+     "share": 0.034
     },
     {
      "type": "Abandoned Vehicle",
-     "count": 1629,
-     "share": 0.0329
-    },
-    {
-     "type": "Missed Collection",
-     "count": 1521,
-     "share": 0.0307
+     "count": 1640,
+     "share": 0.0332
     },
     {
      "type": "Dirty Condition",
      "count": 1521,
+     "share": 0.0308
+    },
+    {
+     "type": "Overgrown Tree/Branches",
+     "count": 1516,
      "share": 0.0307
     }
    ],
    "distinctive": [
     {
      "type": "Illegal Posting",
-     "count": 738,
-     "x_citywide": 10.85
+     "count": 788,
+     "x_citywide": 11.4
     },
     {
      "type": "Root/Sewer/Sidewalk Condition",
-     "count": 770,
-     "x_citywide": 6.01
+     "count": 779,
+     "x_citywide": 6.1
     },
     {
      "type": "Snow or Ice",
      "count": 4673,
-     "x_citywide": 5.86
+     "x_citywide": 5.85
     }
    ]
   }
